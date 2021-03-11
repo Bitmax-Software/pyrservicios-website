@@ -1,0 +1,21 @@
+header {
+    position: relative;
+}
+
+.navbar {
+    z-index: 10;
+}
+
+.carousel-item > img{
+    object-fit: cover;
+    height: 40vh;
+    width: 100%;
+    object-position: 20% 20%;
+} 
+
+.carousel-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
