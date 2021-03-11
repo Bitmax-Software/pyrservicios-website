@@ -1,5 +1,6 @@
 header {
     position: relative;
+    font-size: 25px;
 }
 
 .navbar {
@@ -15,7 +16,10 @@ header {
 
 .carousel-header {
     position: absolute;
-    top: 0;
-    right: 0;
-
+    top: 0%;
+    right: 0%;
+    left: 0%;
 }
+
+
+
