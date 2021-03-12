@@ -10,10 +10,7 @@
     "ext":"js,ejs,css"
   },
   "scripts": {
-<<<<<<< HEAD
     "dev":"npx nodemon",
-=======
->>>>>>> 9ecdca0ef237212bd1cc5b34de1f422b32ad1f2b
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
