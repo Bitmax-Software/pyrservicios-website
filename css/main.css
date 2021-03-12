@@ -5,6 +5,9 @@ header {
 
 .navbar {
     z-index: 10;
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: .8s;
 }
 
 .carousel-item > img{
@@ -14,12 +17,6 @@ header {
     object-position: 20% 20%;
 } 
 
-.carousel-header {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    left: 0%;
-}
 
 
 
