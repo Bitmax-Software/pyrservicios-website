@@ -1,25 +1,31 @@
-<form>
+<form class="email_form needs-validation" novalidate > 
+  <h3>Contáctanos</h3>
     <div class="form-group">
       <label for="contact_name">Nombre</label>
-      <input type="text" class="form-control" id="contact_name" aria-describedby="nameHelp" placeholder="Ingresa tu nombre">
-      <small id="contact_name_help" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-        <label for="contact_email">Email</label>
-        <input type="email" class="form-control" id="contact_email" aria-describedby="emailHelp" placeholder="Ingresa tu email">
-        <small id="contact_email_help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <input type="text" class="form-control" id="contact_name" aria-describedby="nameHelp" placeholder="Ingresa tu nombre" required>    </div>
+      <div class="invalid-feedback">
+        Porfavor ingresa un nombre
       </div>
       <div class="form-group">
-        <label for="contact_cel">Teléfono</label>
+        <label for="contact_email">Email</label>
+        <input type="email" class="form-control" id="contact_email" aria-describedby="emailHelp" placeholder="Ingresa tu email"required> 
+        <div class="invalid-feedback">
+          Porfavor ingresa un email válido
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="contact_cel">Teléfono (Opcional)</label>
         <input type="text" class="form-control" id="contact_cel" aria-describedby="celHelp" placeholder="Ingresa tu numero de cel (Opcional)">
-        <small id="contact_cel_help" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
         <label for="contact_msg">Descripción</label>
-        <textarea class="form-control" id="contact_msg" rows="3" ></textarea>
+        <textarea class="form-control" id="contact_msg" rows="3" required></textarea>
+        <div class="invalid-feedback">
+          Porfavor ingresa un resumen de tu solicitud
+        </div>
       </div>
       <div class="text-center">
-        <button type="submit" class="btn btn-primary btn-lg"   >Submit</button>
+        <button type="submit" class="btn btn-primary btn-pyr"   >Submit</button>
       </div>
    
   </form>
