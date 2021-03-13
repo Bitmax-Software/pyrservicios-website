@@ -21,4 +21,23 @@ header {
 .material-shadow {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
+.pyr_section {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+} 
 
+.contact_us_section {
+    flex: 1 1 200px;
+    margin: 50px;
+    position: relative;
+}
+
+.contact_us_section > * {
+    width: inherit;
+    height: inherit;
+}
+
+.btn-pyr {
+    width: 100px;
+}
