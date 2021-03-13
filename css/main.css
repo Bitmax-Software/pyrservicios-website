@@ -9,14 +9,22 @@ header {
     transition-property: background-color;
     transition-duration: .8s;
 }
-
+.carousel-item{
+    transition: transform 2s ease;
+} 
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+/*
 .carousel-item > img{
     object-fit: cover;
     height: 40vh;
     width: 100%;
     object-position: 20% 20%;
 } 
-
+*/
 
 .material-shadow {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
