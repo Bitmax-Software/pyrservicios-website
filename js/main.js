@@ -1,4 +1,6 @@
-   
+$('.references_slide').hiSlide();
+var elems = document.querySelectorAll('.m-carousel');
+var instances = M.Carousel.init(elems,{duration:100});   
 const navbar = $("nav")
 
     var forms = document.getElementsByClassName('needs-validation')
@@ -38,6 +40,8 @@ function sendEmail(){
       message => alert(message)
     );
 }
+
+
 
 window.addEventListener("scroll",function(){
     const offset = Math.max( $("html").scrollTop(), $("body").scrollTop() )
