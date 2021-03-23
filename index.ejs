@@ -9,13 +9,14 @@
   	<meta name="description" content="Somos un equipo de profesionales con una amplia experiencia y especializaciones en soluciones arquitectónicas integrales">
   	<meta name="keywords" content="lorem">
 	<meta name="author" content="lorem">
-
-  <link rel="stylesheet" href="css/boostrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
-  <script src="js/boostrap/bootstrap.min.js" defer></script>
-  <script src="js/smtp.js" defer></script>
-  <script src="js/main.js" defer></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="css/bootstrap-icons/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/boostrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+	<script src="js/boostrap/bootstrap.min.js" defer></script>
+	<script src="js/smtp.js" defer></script>
+	<script src="js/main.js" defer></script>
 </head>
 <body>
 	<!-- Header -->
@@ -32,6 +33,13 @@
 	<footer class="text-light text-center text-lg-start bg-secondary">
 		<%- include('components/footer/footer') %>
 	</footer>
-	  
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init({
+		duration: 1900,
+	  });
+	</script>
+
 </body>
 </html>
