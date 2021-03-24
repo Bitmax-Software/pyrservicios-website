@@ -8416,9 +8416,6 @@ input[type=range]::-ms-thumb {
   left: 0;
 }
 
-.m-carousel .m-carousel-item > img {
-  width: 100%;
-}
 
 .m-carousel .indicators {
   position: absolute;

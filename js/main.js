@@ -1,5 +1,10 @@
 var elems = document.querySelectorAll('.m-carousel');
+
 var instances = M.Carousel.init(elems,{duration:100});   
+$('.carousel').carousel({
+    interval: 3000
+  });
+
 const navbar = $("nav")
 
     var forms = document.getElementsByClassName('needs-validation')
@@ -52,11 +57,11 @@ window.addEventListener("scroll",function(){
 })
 
 function setFixedNavbarPos(navbar){
-    navbar.removeClass("bg-transparent navbar-dark position-absolute top-0")
+    navbar.removeClass("navbar-light position-absolute top-0")
     navbar.addClass("bg-light navbar-light position-fixed material-shadow")
 }
 
 function setAbsoluteNavbarPos(navbar){
     navbar.removeClass("bg-light navbar-light position-fixed material-shadow")
-    navbar.addClass("bg-transparent navbar-dark position-absolute top-0")
+    navbar.addClass("navbar-light position-absolute top-0")
 }

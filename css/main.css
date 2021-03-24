@@ -9,13 +9,16 @@ header {
     transition-property: background-color;
     transition-duration: .8s;
 }
-
-.carousel-item > img{
-    object-fit: cover;
-    height: 40vh;
-    width: 100%;
-    object-position: 20% 20%;
+.carousel-item{
+    transition: transform 2s ease;
 } 
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+
 
 
 .material-shadow {
