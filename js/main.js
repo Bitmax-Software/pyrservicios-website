@@ -1,4 +1,3 @@
-$('.references_slide').hiSlide();
 var elems = document.querySelectorAll('.m-carousel');
 var instances = M.Carousel.init(elems,{duration:100});   
 const navbar = $("nav")
