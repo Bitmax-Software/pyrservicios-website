@@ -11222,7 +11222,7 @@ $jscomp.polyfill = function (e, r, p, m) {
   M.Carousel = Carousel;
 
   if (M.jQueryLoaded) {
-    M.initializeJqueryWrapper(Carousel, 'carousel', 'M_Carousel');
+    M.initializeJqueryWrapper(Carousel, 'm-carousel', 'M_Carousel');
   }
 })(cash);
 ;(function ($) {

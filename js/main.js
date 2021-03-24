@@ -1,9 +1,15 @@
+
+	  AOS.init({
+      duration: 1900,
+      });
 var elems = document.querySelectorAll('.m-carousel');
 
-var instances = M.Carousel.init(elems,{duration:100});   
 $('.carousel').carousel({
-    interval: 3000
-  });
+  interval: 3000
+});
+
+var instances = M.Carousel.init(elems,{duration:200});   
+
 
 const navbar = $("nav")
 
