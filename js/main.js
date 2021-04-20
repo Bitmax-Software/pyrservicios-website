@@ -11,6 +11,32 @@ $('.carousel').carousel({
 var instances = M.Carousel.init(elems,{duration:200});   
 
 
+(function initModal(){
+  var triggers = document.querySelectorAll('a[modal]')
+  
+
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems, {opacity:0.5});
+  addTriggerInstancesToModal(instances)(triggers)
+})()
+
+function addTriggerInstancesToModal(instances){
+  const modals = {}
+  instances.forEach((x)=>{
+    const name = x.id
+    modals[name] = x
+   })
+   return function (triggers){
+    triggers.forEach(x=>{
+      
+      x.addEventListener('click',function(event){
+         const name = x.getAttribute('modal')
+         if(modals[name])modals[name].open()
+      })
+    })
+   }
+}
+
 const navbar = $("nav")
 
     var forms = document.getElementsByClassName('needs-validation')

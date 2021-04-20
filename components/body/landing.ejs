@@ -1,4 +1,4 @@
-<div data-bs-spy="scroll" data-bs-target="#pyr_navbar" data-bs-offset="100" tab-index="0" class="bg-light" style="min-height: 100rem;height: auto;">
+<div data-spy="scroll" data-target="#pyr_navbar" data-offset="0" class="bg-light" style="min-height: 100rem;height: auto;">
         <section class="mt-5" id="item-1">
             <div class="container" data-aos="fade-in">
                 <div class="text-center p-3">
@@ -86,27 +86,27 @@
         </section>
         
         <!--Square Image and Text Section-->
-        <section class="py-10" id="item-4">
-            <div class="container" data-aos="fade-in">
-                <div class="row">
-                    <div class="col-4">
-                        <h4>Proyectos</h4>
-                        <p>
-                            Somos un equipo de profesionales con una amplia experiencia y especializaciones en soluciones arquitectónicas integrales. Desarrollamos proyectos integrales de diseño y arquitectura trabajando con gran dinamismo, creatividad y velocidad de respuesta. Contribuyendo con el crecimiento comercial frente a un mercado en constante cambio. 
-                        </p>
-                    </div>
-                    <div class="col-8 d-flex justify-content-center flex-row">
-                        <div class="text-center">
-                            <img class="w-100" alt="image" src="assets/img/obras.jpg">
-                        </div>
-                    </div>
-
-                </div>
+        <section  id="item-4">
+            <h4 class="section-title">Servicios</h4>
+            <p class="section-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique numquam dolor consequuntur alias quae quam nostrum officiis, autem nisi sequi id, debitis porro iusto praesentium, exercitationem modi cupiditate maiores voluptate?
+            </p>
+            <div class="py-3 pyr_section">
+                <%- include('../proyectos/proyecto') %>    
+                <%- include('../proyectos/modals') %>
             </div>
+
+        </section>
+        <section>
+            <%- include('../descripcion/frase') %>
         </section>
         <!--CONTACT FORM-->
         <section class="py-5 pyr_section" id="item-5">    
             <%- include('../contact_us/contact_us') %>
         </section>
+                <!--CONTACT FORM-->
+        
 
+        
+    
 </div>

@@ -180,4 +180,75 @@ header {
     position: relative;top:2.5vw;margin: 20px 20px; font-weight: bold;
   }
 
+  .nav-item {
+    margin: 0 2vw;
+  }
+  @media screen and (max-width: 992px) {
+    .nav-link {
+      color: white !important;
+    }
+    .nav-link.active .nav-link {
+      color: black;
+    }
+  }
 
+ .section-title {
+   margin: 0 20px;
+ }
+
+ .section-description{
+   margin: 10px 20px;
+   max-width: 600px;
+   width: 50vw;
+   text-align: justify;
+ }
+
+ .phrase-content {
+  margin: 0 auto; width:50%;height:50%;position: relative;top:30%;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align:justify;
+ }
+ .phrase-container {
+  background-color: #d2cfc9;
+  height:300px;
+  font-size:18px
+ }
+
+ .phrase-content:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 5px;
+  color: #000;
+  font-size: 3em;
+}
+.phrase-content:after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  
+  position: relative;
+  top:15%;
+  left: 30px;
+  color: #000;
+  font-size: 3em;
+}
+.services-container {
+  display:flex; height:400px;width:100%;
+}
+.services-item {
+  position:relative;flex:1 1 auto;
+}
+.services-item-title {
+  position:absolute;top:20px;left:20px;width:60%;color:white;font-weight:600;font-size: 20px;
+}
+.services-item-image {
+  width:100%; height:100%;object-fit:cover; object-position: 0% 0;
+}
+.services-item-btn {
+  float:right;position:absolute;bottom:5%;left:40%
+}
