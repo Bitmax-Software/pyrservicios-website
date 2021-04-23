@@ -221,7 +221,8 @@ header {
  .phrase-container {
   background-color: #d2cfc9;
   height:300px;
-  font-size:18px
+  font-size:18px;
+  text-align: center;
  }
 
  .phrase-content:before {
@@ -251,7 +252,7 @@ header {
   display:flex; height:400px;width:100%;
 }
 .services-item {
-  position:relative;flex:1 1 auto;
+  position:relative;padding: 0px !important;
 }
 .services-item-title {
   position:absolute;top:20px;left:20px;width:60%;color:white;font-weight:600;font-size: 20px;
