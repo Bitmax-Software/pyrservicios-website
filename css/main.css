@@ -283,6 +283,10 @@ header {
 }
 
 
+.navbar-logo img {
+  width:60%;height:auto
+}
+
 @media screen and (max-width: 992px) {
   .nav-link {
     color: white !important;
@@ -306,4 +310,10 @@ header {
       left:-15px;
       top:3px;
   }
+
+  .navbar-logo {
+    position:relative;
+    top: -8px; 
+  }
+  
 }
