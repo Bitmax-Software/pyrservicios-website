@@ -61,23 +61,40 @@ const navbar = $("nav")
 
 
 function sendEmail(){
+    const URL = "http://agile-shore-78050.herokuapp.com/mails"
     const name = $("#contact_name")
     const email = $("#contact_email")
     const phone = $("#contact_cel")
+    const btn = $("#send_form")
     const description = $("#contact_msg")
-   
-    Email.send({
-        SecureToken : "cd6ff455-9bf1-4109-90f0-7e24530a9a64",
-        To : 'JoseMoWa@gmail.com',
-        From : email.val(),
-        Subject : "Consulta de solicitud de servicios PyR de "+ name.val(),
-        Body : getPhone(phone) + description.val()
-    }).then(
-      message => alert(message)
-    );
+    btn.prop("disabled",true)
+    fetch(URL,{
+      method:"POST", 
+      cache:'no-cache',
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body:JSON.stringify({
+        from:email.val(),
+        msg: "Nombre Client: "+ name.val() + "\n" + "Numero: " + phone.val() + "\n"+ description.val()
+      })
+    })
+    .then(x=>x.json())
+    .then(x=>{M.toast({html: x.msg,classes:"good-toast"});btn.prop("disabled",false)})
+    .catch(x=>{M.toast({html: x.msg,classes:"wrong-toast"});btn.prop("disabled",false)})
+
+
 }
 
+function disableSubmitButton(btn) {
+  btn.prop("disabled",true);
+  btn.text("Enviando mail ...")
+}
 
+function enableSubmitButton(btn){
+  btn.prop("disabled",false);
+  btn.text("Enviar")
+}
 
 window.addEventListener("scroll",function(){
     const offset = Math.max( $("html").scrollTop(), $("body").scrollTop() )
