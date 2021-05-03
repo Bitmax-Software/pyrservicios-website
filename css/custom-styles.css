@@ -13,3 +13,14 @@
 .benefits-icons-size{
   font-size: 3rem;
 }
+
+.social-networks{
+  display: inline;
+}
+.social-networks li{
+  display: inline;
+  margin-right: 1rem;
+}
+.social-networks li i{
+  font-size: 1.5rem;
+}
