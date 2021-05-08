@@ -1,3 +1,24 @@
+:root {
+  --primary-color : #222A4B;
+  --secondary-color : white
+}
+.bg-pyr-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-pyr-secondary {
+  background-color: var(--secondary-color);
+}
+
+.color-pyr-primary {
+  color: var(--primary-color);
+}
+
+.color-pyr-secondary {
+  color: var(--secondary-color);
+}
+
+
 header {
     position: relative;
     font-size: 18px;
@@ -325,5 +346,19 @@ header {
   }
   
 }
+footer {
+  background-color: #222A4B;
+  color: white
+}
+
+.customers-title {
+  margin: 0 0; 
+
+}
+
+.customers-description {
+  text-align: justify;
+}
+
 .wrong-toast{background-color:#e53935}
 .good-toast{background-color:#43a047}
