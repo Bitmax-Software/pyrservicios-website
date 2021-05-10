@@ -9,6 +9,7 @@
   	<meta name="keywords" content="lorem">
 	<meta name="author" content="lorem">
 	<link href="assets/img/favicon.png" rel="icon">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
 
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="css/bootstrap-icons/font/bootstrap-icons.css">
@@ -27,34 +28,34 @@
   <script src="js/smtp.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="bg-light body-font">
 	<!-- Header -->
 	<header>
 		<nav id="pyr_navbar" class="navbar navbar-expand-lg position-absolute top-0 navbar-light bg-white">
   <a class="navbar-logo" href="#">
-    <div style="width: 11rem;">
+    <div class="logo-containter">
       <img src="assets/img/OfficialLogo.png" alt="logo" style="object-fit: contain;width: 100%;">
     </div>
   </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="bi bi-justify"></i>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a style="color: #222A4B;" class="nav-link" href="#carouselProjectImages">Conócenos<span class="sr-only">(current)</span></a>
+          <a class="navbar-custom-links nav-link" href="#carouselProjectImages">Conócenos<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a style="color: #222A4B;" class="nav-link" href="#item-2">Aislamiento Térmico</a>
+          <a class="navbar-custom-links nav-link" href="#item-2">Aislamiento Térmico</a>
         </li>
         <li class="nav-item">
-          <a style="color: #222A4B;" class="nav-link" href="#item-3">Servicios</a>
+          <a class="navbar-custom-links nav-link" href="#item-3">Servicios</a>
         </li>
         <li class="nav-item">
-          <a style="color: #222A4B;" class="nav-link" href="#item-4">Clientes</a>
+          <a class="navbar-custom-links nav-link" href="#item-4">Clientes</a>
         </li>
         <li class="nav-item">
-          <a style="color: #222A4B;" class="nav-link" href="#item-5">Contáctanos</a>
+          <a class="navbar-custom-links nav-link" href="#item-5">Contáctanos</a>
         </li>
       </ul>
     </div>
@@ -101,7 +102,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-		<div  class="bg-light" >
+		<div>
     <!--   
     
     <section class="mt-5" id="item-1">
@@ -146,28 +147,28 @@
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col d-flex justify-content-center flex-column">
+                    <div class="col-12 col-md-4 d-flex justify-content-center flex-column">
                         
                         <div class="text-center p-2">
-                            <i class="bi bi-lightbulb benefits-icons-size"></i>
+                            <img class="w-25" alt="image" src="assets/img/money-icon.png">
                         </div>
 
                         <div class="text-center p-2">
                             <h6>AHORRO DE COSTOS DE INVERSIÓN</h6>
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-center flex-column">
+                    <div class="col-12 col-md-4 d-flex justify-content-center flex-column">
                         <div class="text-center p-2">
-                            <i class="bi bi-cash-stack benefits-icons-size"></i>
+                            <img class="w-25" alt="image" src="assets/img/plant-icon.png">
                         </div>
                         
                         <div class="text-center p-2">
                             <h6>AHORRO DE ENERGÍA</h6>
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-center flex-column">
+                    <div class="col-12 col-md-4 d-flex justify-content-center flex-column">
                         <div class="text-center p-2">
-                            <i class="bi bi-question-circle benefits-icons-size"></i>   
+                            <img class="w-25" alt="image" src="assets/img/hand-icon.png">
                         </div>
                         
                         <div class="text-center p-2">
@@ -178,19 +179,19 @@
             </div>
         </section>
     
-        <section class="mt-10">
+        <section class="mt-10 question-bg">
             <div class="container" data-aos="fade-in">
                 <div class="row">
-                    <div class="col d-flex justify-content-center flex-column">
+                    <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
                         <h5>¿Por qué los usuarios deberían colocar lámina térmica en sus espacios?</h5>
                         <br/>
                         <p>
                             Es un producto que no necesita modificar ninguna estructura para que funcione, en el verano nos una temperatura de confort y en el invierno nos protege del frío y lo mas importante no necesita energia.
                         </p>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-6">
                         <div class="p-2">
-                            <img class="w-100" alt="image" src="https://dummyimage.com/wuxga">
+                            <img class="w-100 img-container-question" alt="image" src="https://dummyimage.com/wuxga">
                         </div>
                     </div>
                 </div>
@@ -199,7 +200,7 @@
 
 
         <!--Square Image and Text Section-->
-        <section  class="mt-10" id="item-3" style="padding: 40px 0 0 0">
+        <section  class="mt-10" id="item-3">
 
             <h3 class="section-title" data-aos="fade-in">Servicios</h3>
             <div class="section-description" data-aos="fade-in">
@@ -211,26 +212,26 @@
             <div class="mt-5 py-3 pyr_section" data-aos="fade-in">
                 
 
-<div class="row services-container" style="height: 46rem;width:100%;">
-    <div class="col services-item">
+<div class="row services-container">
+    <div class="col-6 col-md-3 services-item">
         <span class="services-item-title">AISLAMIENTO TÉRMICO</span>
         <img src="https://images.adsttc.com/media/images/5238/7b23/e8e4/4e24/5700/017b/medium_jpg/01_enrique-browne-architect_consorcio-santiago.jpg?1379433244" alt="" class="services-item-image">
         <a role="button" modal="modal1" class="btn btn-primary services-item-btn" > Ver más</a>
 
     </div>
-    <div class="col services-item">
+    <div class="col-6 col-md-3 services-item">
         <span class="services-item-title">ACONDICIONAMIENTO DE LOCALES</span>
         <img src="https://i.pinimg.com/564x/a9/1f/c8/a91fc82c6dfc6b92e71f6798862c7b58.jpg" alt="" class="services-item-image">
         <a role="button" modal="modal1" class="btn btn-primary services-item-btn" > Ver más</a>
 
     </div>
-    <div class="col services-item">
+    <div class="col-6 col-md-3 services-item">
         <span class="services-item-title">PROYECTOS LLAVE EN MANO</span>
         <img src="https://images.adsttc.com/media/images/5f62/6ab2/63c0/1741/7d00/041c/large_jpg/Imagem_03_Fachada___Jes%C3%BAs_Perez.jpg?1600285315" alt="" class="services-item-image">
         <a role="button" modal="modal1" class="btn btn-primary services-item-btn" > Ver más</a>
 
     </div>
-    <div class="col services-item">
+    <div class="col-6 col-md-3 services-item">
         <span class="services-item-title">ALMACENES BPA</span>
         <img src="https://images.adsttc.com/media/images/5238/7b23/e8e4/4e24/5700/017b/medium_jpg/01_enrique-browne-architect_consorcio-santiago.jpg?1379433244" alt="" class="services-item-image">
         <a role="button" modal="modal1" class="btn btn-primary services-item-btn" > Ver más</a>
@@ -251,7 +252,7 @@
         </section>
 
         <!--Clients-->
-        <section class="my-10" id="item-4" style="padding: 40px 0 0 0">
+        <section class="my-10" id="item-4">
             <div class="container" data-aos="fade-in">
                 <div class="row">
                     <div class="col">
@@ -330,7 +331,7 @@
 </div> 
         </section>
         <!--CONTACT FORM-->
-        <section class=" pyr_section" id="item-5">    
+        <section class="contact_us_section pyr_section" id="item-5">    
             <div  class="contact_us_section" data-aos="fade-in">
     
     <form class="email_form needs-validation" novalidate submit="sendEmail" > 
@@ -381,7 +382,7 @@
               </div>
               <div>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nihil dolorum ipsum quaerat, culpa quae aperiam vel quibusdam eum sequi soluta iure debitis laudantium explicabo at ipsam alias ipsa harum.</p>
-              <footer class="blockquote-footer">Abdul de <cite title="Source Title">AJE CORPORATIONS</cite></footer>
+              <footer class="blockquote-footer testimonial-footer-bg">Abdul de <cite title="Source Title">AJE CORPORATIONS</cite></footer>
             </div>
             </div>
           </div>  
@@ -395,7 +396,7 @@
               </div>
               <div>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nihil dolorum ipsum quaerat, culpa quae aperiam vel quibusdam eum sequi soluta iure debitis laudantium explicabo at ipsam alias ipsa harum.</p>
-              <footer class="blockquote-footer">Abdul de <cite title="Source Title">AJE CORPORATIONS</cite></footer>
+              <footer class="blockquote-footer testimonial-footer-bg">Abdul de <cite title="Source Title">AJE CORPORATIONS</cite></footer>
             </div>
             </div>
           </div>
@@ -410,7 +411,7 @@
             </div>
             <div>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nihil dolorum ipsum quaerat, culpa quae aperiam vel quibusdam eum sequi soluta iure debitis laudantium explicabo at ipsam alias ipsa harum.</p>
-            <footer class="blockquote-footer">Abdul de <cite title="Source Title">AJE CORPORATIONS</cite></footer>
+            <footer class="blockquote-footer testimonial-footer-bg">Abdul de <cite title="Source Title">AJE CORPORATIONS</cite></footer>
           </div>
           </div>
         </div>
@@ -481,7 +482,7 @@
               <a target="_blank" href="https://www.instagram.com/pyrworldservices/?hl=es-la" class="text-dark"><i class="bi bi-instagram color-pyr-secondary"></i></a>
             </li>
             <li>
-              <a href="#" class="text-dark "><i class="bi bi-linkedin color-pyr-secondary"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/company/p-r-world-services-sac/?originalSubdomain=pe" class="text-dark "><i class="bi bi-linkedin color-pyr-secondary"></i></a>
             </li>
           </ul>
       </div>
