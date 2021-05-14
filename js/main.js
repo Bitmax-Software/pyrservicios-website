@@ -4,9 +4,14 @@
       });
 var elems = document.querySelectorAll('.m-carousel');
 
-var offset = 60
+var offset = 80
 
 $('.navbar-nav li a').click(function(event) {
+  console.log($(this).text())
+  if ($(this).text() === 'Servicios' || $(this).text() === 'Clientes' )
+    offset = 100
+  if ($(this).text() === 'Contáctanos')
+    offset = 40
   event.preventDefault();
   $($(this).attr('href'))[0].scrollIntoView();
   scrollBy(0, -offset);
