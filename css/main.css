@@ -324,6 +324,14 @@ header {
   width:60%;height:auto
 }
 
+.pyr-icon {
+  width: 5vw;
+  height: 5vw
+}
+.pyr-icon--text {
+  height:40px
+}
+
 @media screen and (max-width: 992px) {
   .nav-link {
     color: white !important;
@@ -332,11 +340,15 @@ header {
     color: black;
   }
 
-
-
-  .card-body.testimonial {
-    display: flex;
+  .pyr-icon {
+    width: 10vw;
+    height: 10vw
   }
+  .pyr-icon--text {
+    height:40px
+  }
+
+  
   
   
   .avatar {
