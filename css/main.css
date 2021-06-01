@@ -283,9 +283,38 @@ header {
   width: 100%;
 }
 
+.question-container{
+  width: 23rem;
+}
+.phrase-background{
+  padding: 2px 6px;
+  margin-left: 3px;
+}
+.phrase-background:before {
+  content: "";
+  position: fixed;
+  left: calc(50% - -33px);
+  bottom: 16px;
+  width: 58px;
+  height: 26px;
+  background: #528AB4;
+  transform: skew(-15deg);
+  transform-origin: top;
+}
+.phrase-background:after {
+  content: 'JUSTO "';
+    position: fixed;
+    left: calc(50% - -31px);
+    bottom: 16px;
+    width: 62px;
+    height: 26px;
+}
 @media (max-width: 991px){ 
   .services-container {
     height: auto;
+  }
+  .question-container{
+    width: auto;
   }
 }
 .services-item {
