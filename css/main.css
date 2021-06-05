@@ -309,6 +309,23 @@ header {
     width: 62px;
     height: 26px;
 }
+
+.row-clients .col{
+  align-self: center;
+  text-align-last: center;
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
 @media (max-width: 991px){ 
   .services-container {
     height: auto;
