@@ -127,3 +127,4 @@ function setAbsoluteNavbarPos(navbar){
     navbar.removeClass("bg-light navbar-light position-fixed material-shadow")
     navbar.addClass("navbar-light position-absolute top-0")
 }
+
