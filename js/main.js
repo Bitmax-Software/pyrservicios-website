@@ -18,7 +18,7 @@ $('.navbar-nav li a').click(function(event) {
 });
 
 $('.carousel').carousel({
-  interval: 3000
+  interval: 5000
 });
 
 var instances = M.Carousel.init(elems,{duration:200});   

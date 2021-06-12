@@ -51,7 +51,15 @@ header {
     transition-duration: .8s;
 }
 .carousel-item{
+  transition: transform 2s ease;
+} 
+.carousel-item2{
     transition: transform 2s ease;
+    height: 50rem;
+} 
+.carousel-item2 img{
+  min-height: 50rem;
+  object-fit: cover;
 } 
 .carousel-indicators li {
     width: 10px;
@@ -334,11 +342,42 @@ header {
     width: auto;
   }
 }
+
+.services-item:hover .services-description {
+  visibility: visible;
+  opacity: 1;
+}
+.services-description p{
+  text-align: justify;
+  line-height: 2rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0px 30px;
+  font-size: 1.04rem;
+}
+
+.services-description {
+  pointer-events: none;
+position: absolute;
+margin: auto;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(34, 42, 75, 0.72);
+color: #fff;
+visibility: hidden;
+opacity: 0;
+
+/* transition effect. not necessary */
+transition: opacity 1s, visibility 1s;
+}
 .services-item {
   position:relative;padding: 0px !important;
 }
 .services-item-title {
-  position:absolute;top:20px;left:20px;width:60%;color:white;font-weight:600;font-size: 20px;
+  position:absolute;top:20px;left:20px;width:60%;color:white;font-weight:600;font-size: 20px; z-index: 1;
 }
 .services-item-image {
   width:100%; height:100%;object-fit:cover; object-position: 0% 0;
