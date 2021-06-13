@@ -466,5 +466,33 @@ footer {
   text-align: justify;
 }
 
+.grid-container {
+  display:grid;
+  grid-gap:30px;grid-template-columns: auto auto auto;
+}
+
+.bolder {
+  font-weight: bold;
+}
+
+.about_us_item {
+  border: 3px solid white;border-radius: 2px;
+}
+.about_us_item_icon_container {
+  position:relative; 
+  top:-32px; 
+  left: 35px;
+  background: #222A4B;
+}
+.about_us_item_icon {
+  font-size:40px;
+  background:#222A4B;
+  padding:0px 15px
+}
+.about_us_item_text {
+  position:relative;margin: 5px 20px;top:-25px
+}
+
+
 .wrong-toast{background-color:#e53935}
 .good-toast{background-color:#43a047}
