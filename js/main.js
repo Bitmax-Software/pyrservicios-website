@@ -3,6 +3,7 @@
       duration: 1900,
       });
 var elems = document.querySelectorAll('.m-carousel');
+var instances = M.Carousel.init(elems,{duration:200});   
 
 var offset = 80
 
@@ -21,7 +22,7 @@ $('.carousel').carousel({
   interval: 5000
 });
 
-var instances = M.Carousel.init(elems,{duration:200});   
+
 
 
 (function initModal(){
