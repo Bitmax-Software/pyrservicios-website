@@ -493,6 +493,14 @@ footer {
   position:relative;margin: 5px 20px;top:-25px
 }
 
+.background-logo {
+  width: 35%;
+  bottom:0px;
+  height:auto;
+  right:0px;
+  opacity:0.5;
+  position:absolute;
+}
 
 .wrong-toast{background-color:#e53935}
 .good-toast{background-color:#43a047}
