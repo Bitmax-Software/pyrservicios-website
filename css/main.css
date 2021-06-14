@@ -415,7 +415,9 @@ transition: opacity 1s, visibility 1s;
   height: 5vw
 }
 .pyr-icon--text {
-  height:40px
+  color:#0056b3;
+  height:40px;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 992px) {
@@ -500,6 +502,11 @@ footer {
   right:0px;
   opacity:0.5;
   position:absolute;
+}
+
+.aislamiento_termico_title {
+  color :#222A4B !important;
+  font-weight: bold;
 }
 
 .wrong-toast{background-color:#e53935}
