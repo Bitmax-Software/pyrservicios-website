@@ -1,4 +1,3 @@
-
 	  AOS.init({
       duration: 1900,
       });
@@ -7,8 +6,9 @@ var instances = M.Carousel.init(elems,{duration:200});
 
 var offset = 80
 
+
+
 $('.navbar-nav li a').click(function(event) {
-  console.log($(this).text())
   if ($(this).text() === 'Servicios' || $(this).text() === 'Clientes' )
     offset = 100
   if ($(this).text() === 'Contáctanos')
@@ -129,3 +129,36 @@ function setAbsoluteNavbarPos(navbar){
     navbar.addClass("navbar-light position-absolute top-0")
 }
 
+const NavTabs = function(links){
+   const targets = []
+   links.forEach((x)=>{
+     const self = this 
+     const target = x.getAttribute("data-bs-target")
+     const el = document.querySelector(target)
+     targets.push({target,node:el,link:x})     
+     x.addEventListener('click',(event)=>{
+        self.show(target)
+     })
+   })
+
+   this.show = function(target){
+     const hiddens = targets.filter(x=>x.target !== target)
+     const display = targets.find(x=>x.target === target)
+     hiddens.forEach(x=>{
+        this._hide(x)
+     })
+     this._show(display)
+   }
+
+   this._show = function(target){
+     target.node.classList.add("active")
+     target.link.classList.add("active")
+   }
+   this._hide = function(target){
+     target.node.classList.remove('active')
+     target.link.classList.remove('active')
+    }
+}
+
+var tabs = document.querySelectorAll('#myTab li button')
+new NavTabs(tabs)
