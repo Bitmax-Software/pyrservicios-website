@@ -517,7 +517,7 @@ footer {
 
 .use-cases-info-container {
   height: 280px;
-  align-self: end;
+  align-self: flex-end;
   flex: 0 1 450px;
   color: white !important;
   margin-left:1px;
@@ -525,7 +525,7 @@ footer {
 }
 .use-cases-panel > * {
   display: none
-  
+
 }
 .use-cases-panel .active{
   display: block !important;
