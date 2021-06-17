@@ -22,7 +22,23 @@ $('.carousel').carousel({
   interval: 5000
 });
 
+/*START CASOS DE EXITO JS*/
 
+$(function(){
+  var $container = $('#container44');
+  $container.isotope({
+      itemSelector : '.element',
+      filter: '.ransa'
+  });
+
+  $('#filters a').click(function(){
+      var selector = $(this).attr('data-filter');
+      $container.isotope({ filter: selector });
+      return false;
+  });
+});
+
+/*END CASOS DE EXITO JS*/
 
 
 (function initModal(){

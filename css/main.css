@@ -366,7 +366,7 @@ top: 0;
 bottom: 0;
 left: 0;
 right: 0;
-background: rgba(34, 42, 75, 0.72);
+background: rgba(34, 42, 75, 0.85);
 color: #fff;
 visibility: hidden;
 opacity: 0;
@@ -478,7 +478,7 @@ footer {
 }
 
 .about_us_item {
-  border: 3px solid white;border-radius: 2px;
+  border: 1px solid white;border-radius: 2px;
 }
 .about_us_item_icon_container {
   position:relative; 
