@@ -525,6 +525,7 @@ footer {
 }
 .use-cases-panel > * {
   display: none
+  
 }
 .use-cases-panel .active{
   display: block !important;
