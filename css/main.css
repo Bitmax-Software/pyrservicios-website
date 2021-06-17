@@ -530,6 +530,10 @@ footer {
   display: block !important;
 }
 
+i[class*="bi-arrow-"]{
+  cursor: pointer;
+}
+
 .use-cases-panel {
   display:flex;
   flex-direction: column;
