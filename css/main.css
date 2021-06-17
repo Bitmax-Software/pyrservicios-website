@@ -478,7 +478,7 @@ footer {
 }
 
 .about_us_item {
-  border: 3px solid white;border-radius: 2px;
+  border: 1px solid white;border-radius: 2px;
 }
 .about_us_item_icon_container {
   position:relative; 
