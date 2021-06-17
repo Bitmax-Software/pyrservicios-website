@@ -511,3 +511,37 @@ footer {
 
 .wrong-toast{background-color:#e53935}
 .good-toast{background-color:#43a047}
+.nav-link {
+  color: #222A4B !important; 
+}
+
+.use-cases-info-container {
+  height: 280px;
+  align-self: end;
+  flex: 0 1 450px;
+  color: white !important;
+  margin-left:1px;
+  background-color: var(--primary-color)
+}
+.use-cases-panel > * {
+  display: none
+}
+.use-cases-panel .active{
+  display: block !important;
+}
+
+.use-cases-panel {
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+
+
+
+@media screen and (max-width: 992px){
+  .nav-link {
+     color: #222A4B !important; 
+}
+}

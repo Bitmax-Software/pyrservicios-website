@@ -144,6 +144,68 @@ function setAbsoluteNavbarPos(navbar){
     navbar.removeClass("bg-light navbar-light position-fixed material-shadow")
     navbar.addClass("navbar-light position-absolute top-0")
 }
+function hello(){
+  console.log("hey")
+}
+const Paginator = function(target){
+
+  const containers = target.children[0]
+  const childrenSnap = containers.children
+  let index = 1
+  let self = this
+  let final = containers.children.length
+  const counter = document.createElement("div")
+  counter.classList.add("mb-2")
+  counter.style = "font-size:2.0em"
+  counter.textContent = `0${index}/0${final}`
+
+  const right = document.createElement("i")
+  const left = document.createElement("i")
+  left.classList.add("bi","bi-arrow-left","mx-2")
+  left.style = "font-size:1.5em;z-index:2"
+  right.classList.add("bi","bi-arrow-right","mx-2") 
+  right.style = "font-size:1.5em;z-index:2"
+  left.addEventListener('click',function(event){
+    if (index <= 1 ) return
+    
+    self.back()
+    self.showCurrent() 
+  },false)
+  right.addEventListener('click',function(event){
+    if (index >= final ) return
+    self.next()
+    self.showCurrent() 
+  },false)
+  const arrows = document.createElement("div")
+  arrows.style= "display:flex;flex-flow: row;align-items:center"
+  arrows.appendChild(left)
+  arrows.appendChild(right)
+  this.next = function(){
+    index+= 1
+    counter.textContent = `0${index}/0${final}`
+  }
+
+  this.back = function(){
+    index-= 1
+    counter.textContent = `0${index}/0${final}`
+  }
+
+  this.showCurrent = function(){
+    for (let i = 0; i < childrenSnap.length; i++) {
+      const element = childrenSnap[i];
+      element.classList.remove("active")
+      
+    }
+    childrenSnap[index - 1].classList.add("active")
+  }
+
+  const paginator = document.createElement("div")
+  paginator.style = "display:flex;justify-content:space-between"
+  paginator.appendChild(counter)
+  paginator.appendChild(arrows)
+  containers.appendChild(paginator)
+}
+
 
 const NavTabs = function(links){
    const targets = []
@@ -178,3 +240,11 @@ const NavTabs = function(links){
 
 var tabs = document.querySelectorAll('#myTab li button')
 new NavTabs(tabs)
+
+var useCases = document.querySelectorAll(".use-cases-info-container")
+for (let index = 0; index < useCases.length; index++) {
+  const element = useCases[index];
+  new Paginator(element)
+  
+}
+

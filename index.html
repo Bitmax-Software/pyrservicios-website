@@ -23,7 +23,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>  
 
   <script src="js/boostrap/bootstrap.min.js" defer></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js" defer ></script>
+  <script src="js/aos.js" defer></script> 
   <script src="js/materialize.js" defer></script>
 	
   <script src="js/smtp.js" defer></script>
@@ -434,257 +434,253 @@
             list-style-type: disc !important;
         }
     </style>
-    <section class="mt-7 mb-5">
+    <section class="mt-7 mb-5" data-aos="fade-in">
         <h3 class="section-title mb-4" >Casos de éxito</h3>
         <div >
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            
+<ul class="nav nav-tabs" style="width:68vw;margin: 0 auto" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+    <button class="nav-link active" id="ransa-tab" data-bs-toggle="tab" data-bs-target="#ransa" type="button" role="tab" aria-controls="ransa" aria-selected="true">Ransa</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+    <button class="nav-link" id="kp-tab" data-bs-toggle="tab" data-bs-target="#kp" type="button" role="tab" aria-controls="kp" aria-selected="false">KP</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
+    <button class="nav-link" id="q-suiza-tab" data-bs-toggle="tab" data-bs-target="#q-suiza" type="button" role="tab" aria-controls="q-suiza" aria-selected="false">Química Suiza</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+    <button class="nav-link" id="faber-castell-tab" data-bs-toggle="tab" data-bs-target="#faber-castell" type="button" role="tab" aria-controls="faber-castell" aria-selected="false">Faber Castell</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="usil-tab" data-bs-toggle="tab" data-bs-target="#usil" type="button" role="tab" aria-controls="usil" aria-selected="false">Usil</button>
   </li>
 </ul>
 
-<div class="tab-content">
-  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">home</div>
-  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">message</div>
-  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">settings</div>
-</div>
-
-        </div>
-
-    </section>
-    <section class="mt-7 mb-5">
-        <h3 class="section-title mb-4" data-aos="fade-in">Casos de éxito</h3>
-        <div class="menu-container">
-            <ul id="filters">
-                <li><a href="#" data-filter=".ransa">Ransa</a></li>
-                <li><a href="#" data-filter=".kp">KP Logistic</a></li>
-                <li><a href="#" data-filter=".quimica">Quimica Suiza</a></li>
-                <li><a href="#" data-filter=".faber">Faber Castell</a></li>
-                <li><a href="#" data-filter=".usil">Usil</a></li>
-            </ul>
-        </div>
-
-        <div id="container44" data-aos="fade-in" class="mt-3">
-            <div class="element ransa w-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="p-2">
-                                <img class="w-100" alt="image"
-                                    src="assets/img/casos de exito/almacenes_bpa.jpg">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <ul class="project-detail">
-                                <li>
-                                    Título del proyecto: Acondicionamiento de almacén BPA
-                                </li>
-                                <li>
-                                    Objetivos: Mantener temperatura entre 25°C y 29°C.
-                                </li>
-                                <li>
-                                    Fecha de ejecución:febrero 2021
-                                </li>
-
-                                <li>Lugar de ejecución: Callao
-                                </li>
-                                <li>
-                                    Área (m2):2460 M2
-                                </li>
-                                <li>
-                                    Cliente:Ransa
-                                </li>
-                                <li>
-                                    Tipo de cliente: Logistica
-                                </li>
-                                <li>
-                                    Conclusiones: se logró mantener una Temperatura entre 25°C y 28° con un
-                                    excelente ahorro de energía.
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--KP-->
-            <div class="element kp w-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="p-2">
-                                <img class="w-100" alt="image"
-                                    src="assets/img/casos de exito/KPLOGISTIC.jpeg">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <ul class="project-detail">
-                                <li>
-                                    Título del proyecto: Aislamiento Térmico
-                                </li>
-                                <li>
-                                    Objetivos: Mantener temperatura baja.
-                                </li>
-                                <li>
-                                    Fecha de ejecución: Diciembre 2019
-                                </li>
-
-                                <li>Lugar de ejecución: Almacenes BSF
-                                </li>
-                                <li>
-                                    Área (m2): 2000 m2
-                                </li>
-                                <li>
-                                    Cliente: KP Logistic
-                                </li>
-                                <li>
-                                    Tipo de cliente: Logistica Farmaceutica
-                                </li>
-                                <li>
-                                    Conclusiones: Ahorro de energía y tipo de acabado en paredes.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!--QUIMICA-->
-            <div class="element quimica w-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="p-2">
-                                <img class="w-100" alt="image"
-                                    src="assets/img/casos de exito/quimica.jpeg">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <ul class="project-detail">
-                                <li>
-                                    Título del proyecto: Cambio de cobertura y aislamiento térmico
-                                </li>
-                                <li>
-                                    Objetivos: Temperatura con ahorro de energía.
-                                </li>
-                                <li>
-                                    Fecha de ejecución: Mayo 2021
-                                </li>
-
-                                <li>Lugar de ejecución: Chiclayo
-                                </li>
-                                <li>
-                                    Área (m2): 890 m2
-                                </li>
-                                <li>
-                                    Cliente: Quimica Suiza
-                                </li>
-                                <li>
-                                    Tipo de cliente: Almacén BPA
-                                </li>
-                                <li>
-                                    Conclusiones: Logramos hermeticidad y control de temperatura,con ahorro de energía.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
- <!--Faber Castell-->
- <div class="element faber w-100">
+<div class="tab-content mt-4">
+  <div class="tab-pane active" id="ransa" role="tabpanel" aria-labelledby="ransa-tab">
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="p-2">
-                    <img class="w-100" alt="image"
-                        src="assets/img/casos de exito/faberCastell.jpg">
-                </div>
+      <div style="display:flex;justify-content:center">
+              <div style="flex:1 1 70%">
+                  <img class="w-100 img-container-question" alt="image"
+                      src="assets/img/casos de exito/almacenes_bpa.jpg">
+              </div>
+            <div id="ransa-use-case" class="use-cases-info-container" >
+              <div class="use-cases-panel p-4">
+                  <div class="active">
+                    <h5>Proyecto Acondicionamiento de almacén BPA</h5>
+                    <div class="mb-2">
+                      Objetivos: Mantener temperatura entre 25°C y 29°C.
+                    </div>
+                    <div class="mb-2">
+                      Fecha de ejecución: Febrero 2021
+                    </div>
+                    <div class="mb-2">
+                      Lugar de ejecución: Callao
+                    </div>
+                  </div>
+                  <div>
+                    <h5>Proyecto Acondicionamiento de almacén BPA</h5>
+                    <div class="mb-2">
+                      Área (m2):2460 M2
+                    </div>
+                    <div class="mb-2">
+                      Cliente:Ransa
+                    </div>
+                    <div class="mb-2">
+                      Tipo de cliente: Logistica
+                    </div>
+                  </div>
+                  <div>
+                    <h5>Proyecto Acondicionamiento de almacén BPA</h5>
+                    <div class="mb-2">
+                      Conclusiones: se logró mantener una Temperatura entre 25°C y 28° con un
+                      excelente ahorro de energía.  
+                    </div>
+                  </div>    
             </div>
-            <div class="col">
-                <ul class="project-detail">
-                    <li>
-                        Título del proyecto: Aislamiento de Nave de producción
-                    </li>
-                    <li>
-                        Objetivos: Control de temperatura
-                    </li>
-                    <li>
-                        Fecha de ejecución: Septiembre 2016
-                    </li>
+            </div>
 
-                    <li>Lugar de ejecución: Santa Anita
-                    </li>
-                    <li>
-                        Área (m2): 850 m2
-                    </li>
-                    <li>
-                        Cliente: Faber Castell
-                    </li>
-                    <li>
-                        Tipo de cliente: Fabrica
-                    </li>
-                    <li>
-                        Conclusiones: Control de temperatura Confort.
-                    </li>
-                </ul>
+      </div>
+  </div>
+  </div>
+  <div class="tab-pane" id="kp" role="tabpanel" aria-labelledby="kp-tab">
+    <div class="container">
+      <div style="display:flex;justify-content:center">
+        <div style="flex:1 1 70%">
+            <img class="w-100 img-container-question" alt="image"
+                src="assets/img/casos de exito/almacenes_bpa.jpg">
+        </div>
+      <div id="kp-use-case" class="use-cases-info-container" >
+        <div class="use-cases-panel p-4">
+            <div class="active">
+              <h5>Proyecto Aislamiento Térmico</h5>
+              <div class="mb-2">
+                Objetivos: Mantener temperatura baja.
+              </div>
+              <div class="mb-2">
+                Fecha de ejecución: Diciembre 2019
+              </div>
+              <div class="mb-2">
+                Lugar de ejecución: Almacenes BSF
+              </div>
             </div>
+            <div>
+              <h5>Proyecto Aislamiento Térmico</h5>
+              <div class="mb-2">
+                Área (m2): 2000 m2
+              </div>
+              <div class="mb-2">
+                Cliente: KP Logistic
+              </div>
+              <div class="mb-2">
+                Tipo de cliente: Logistica Farmaceutica
+              </div>
+            </div>
+            <div>
+              <h5>Proyecto Aislamiento Térmico</h5>
+              <div class="mb-2">
+                Conclusiones: Ahorro de energía y tipo de acabado en paredes.
+              </div>
+            </div>    
+        </div>
+      </div>
+</div>
+  </div>
+  </div>
+  <div class="tab-pane" id="q-suiza" role="tabpanel" aria-labelledby="q-suiza-tab">
+    <div class="container">
+      <div style="display:flex;justify-content:center">
+        <div style="flex:1 1 70%">
+            <img class="w-100 img-container-question" alt="image"
+                src="assets/img/casos de exito/quimica.jpg">
+        </div>
+      <div id="q-suiza-use-case" class="use-cases-info-container" >
+        <div class="use-cases-panel p-4">
+            <div class="active">
+              <h5>Proyecto Cambio de cobertura y aislamiento térmico</h5>
+              <div class="mb-2">
+                Objetivos: Temperatura con ahorro de energía.
+              </div>
+              <div class="mb-2">
+                Fecha de ejecución: Mayo 2021
+              </div>
+              <div class="mb-2">
+                Lugar de ejecución: Chiclayo              
+              </div>
+            </div>
+            <div>
+              <h5>Proyecto Cambio de cobertura y aislamiento térmico</h5>
+              <div class="mb-2">
+                Área (m2): 890 m2
+              </div>
+              <div class="mb-2">
+                Cliente: Quimica Suiza
+              </div>
+              <div class="mb-2">
+                Tipo de cliente: Almacén BPA
+              </div>
+            </div>
+            <div>
+              <h5>Proyecto Cambio de cobertura y aislamiento térmico</h5>
+              <div class="mb-2">
+                Conclusiones: Logramos hermeticidad y control de temperatura,con ahorro de energía.
+              </div>
+            </div>    
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="faber-castell" role="tabpanel" aria-labelledby="faber-castell-tab">
+    <div class="container">
+      <div style="display:flex;justify-content:center">
+        <div style="flex:1 1 70%">
+            <img class="w-100 img-container-question" alt="image"
+                src="assets/img/casos de exito/faberCastell.jpg">
+        </div>
+      <div id="faber-castell-use-case" class="use-cases-info-container" >
+        <div class="use-cases-panel p-4">
+            <div class="active">
+              <h5>Proyecto Aislamiento de Nave de producción</h5>
+              <div class="mb-2">
+                Objetivos: Control de temperatura
+              </div>
+              <div class="mb-2">
+                Fecha de ejecución: Septiembre 2016
+              </div>
+              <div class="mb-2">
+                Lugar de ejecución: Santa Anita              
+              </div>
+            </div>
+            <div>
+              <h5>Proyecto Aislamiento de Nave de producción</h5>
+              <div class="mb-2">
+                Área (m2): 850 m2
+              </div>
+              <div class="mb-2">
+                Cliente: Faber Castell
+              </div>
+              <div class="mb-2">
+                Tipo de cliente: Fábrica
+              </div>
+            </div>
+            <div>
+              <h5>Proyecto Aislamiento de Nave de producción</h5>
+              <div class="mb-2">
+                Conclusiones: Control de temperatura Confort.
+              </div>
+            </div>    
+        </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  <div class="tab-pane" id="usil" role="tabpanel" aria-labelledby="usil-tab">
+      <div class="container">
+        <div style="display:flex;justify-content:center">
+          <div style="flex:1 1 70%">
+              <img class="w-100 img-container-question" alt="image"
+                  src="assets/img/casos de exito/usil.jpg">
+          </div>
+        <div id="usil-use-case" class="use-cases-info-container" >
+          <div class="use-cases-panel p-4">
+              <div class="active">
+                <h5>Proyecto Cambio de cobertura y aislamiento térmico</h5>
+                <div class="mb-2">
+                  Objetivos: Reducir Temperatura
+                </div>
+                <div class="mb-2">
+                  Fecha de ejecución: Febrero 2013
+                </div>
+                <div class="mb-2">
+                  Lugar de ejecución: Campus 1                
+                </div>
+              </div>
+              <div>
+                <h5>Proyecto Cambio de cobertura y aislamiento térmico</h5>
+                <div class="mb-2">
+                  Área (m2): 680 m2
+                </div>
+                <div class="mb-2">
+                  Cliente: Universidad San Ignacio de Loyola
+                </div>
+                <div class="mb-2">
+                  Tipo de cliente: Universidad
+                </div>
+              </div>
+              <div>
+                <h5>Proyecto Cambio de cobertura y aislamiento térmico</h5>
+                <div class="mb-2">
+                  Conclusiones: Control de Temperatura óptimo y reducción de uso de energía.
+                </div>
+              </div>    
+          </div>
+          </div>
         </div>
     </div>
+  </div>
 </div>
 
-
-            <!--USIL-->
-            <div class="element usil w-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="p-2">
-                                <img class="w-100" alt="image"
-                                    src="assets/img/casos de exito/usil.jpg">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <ul class="project-detail">
-                                <li>
-                                    Título del proyecto: Cambio de cobertura y aislamiento térmico.
-                                </li>
-                                <li>
-                                    Objetivos: Reducir Temperatura
-                                </li>
-                                <li>
-                                    Fecha de ejecución: Febrero 2013
-                                </li>
-
-                                <li>Lugar de ejecución: Campus 1
-                                </li>
-                                <li>
-                                    Área (m2): 680 m2
-                                </li>
-                                <li>
-                                    Cliente: Universidad San Ignacio de Loyola
-                                </li>
-                                <li>
-                                    Tipo de cliente: Universidad
-                                </li>
-                                <li>
-                                    Conclusiones: Control de Temperatura óptimo y reducción de uso de energía.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
