@@ -1,5 +1,5 @@
 	  AOS.init({
-      duration: 1900,
+      duration: 1800,
       });
 var elems = document.querySelectorAll('.m-carousel');
 var instances = M.Carousel.init(elems,{duration:200});   

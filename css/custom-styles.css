@@ -68,3 +68,22 @@
   background-color: #222A4B !important;
   color: white !important;
 }
+
+.casos-de-exito button{
+  color: #222A4B !important;
+}
+
+.casos-de-exito button:hover{
+  background-color: #222A4B !important;
+  color: white !important;
+}
+.casos-de-exito .active{
+  background-color: #222A4B !important;
+  color: white !important;
+}
+
+.years-experience:before{
+    content: "11" !important;
+    font-family: "Barlow", sans-serif !important;
+    font-weight: 600 !important;
+}
