@@ -1,4 +1,4 @@
-<div data-aos="fade-in">
+<div>
     <!--Icons Images Section-->
     <section class="question-bg" style="position:relative;">
         <!--
@@ -10,22 +10,28 @@
             </div>
         </div>
     </section>
-    <section class="mt-5" id="item-2" data-aos="fade-up"> 
-        <div class="container">
+    <section class="my-10" id="item-2" data-aos="fade-up"> 
+        <div class="container" style="position: relative;">
+            <hr style="position: absolute;
+            width: 64%;
+            text-align: left;
+            margin-left: 0;
+            bottom: 4%;
+            left: 18%;">
             <div class="text-center p-3 ">
                 <h4 class="aislamiento_termico_title">¿Por qué elegir el aislamiento térmico?</h4>
             </div>
             <div class="row mt-2">
-                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center flex-column">
+                <div class="question-conteiner-icon col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center flex-column">
                     <div class="text-center p-2">
-                        <h6 class="pyr-icon--text">Ahorro de costos de inversión</h6>
+                        <h6 class="pyr-icon--text">Ahorro de costos de <br> inversión</h6>
                     </div>
                     <div class="text-center p-2">
                         <i class="bi bi-stop-circle color-pyr-primary" style="font-size:24px"></i>                    
                     </div>
                  
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center flex-column">
+                <div class="question-conteiner-icon col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center flex-column">
 
                     <div class="text-center p-2">
                         <h6 class="pyr-icon--text">Ahorro de energía</h6>
@@ -34,7 +40,7 @@
                         <i class="bi bi-stop-circle color-pyr-primary" style="font-size:24px"></i>                    
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center flex-column">
+                <div class="question-conteiner-icon col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center flex-column">
                     <div class="text-center p-2">
                         <h6 class="pyr-icon--text">Producto no invasivo y recuperable</h6>
                     </div>
@@ -46,7 +52,7 @@
         </div>
     </section>
 
-    <section class="mt-10 question-bg" data-aos="fade-in">
+    <section class="my-10 question-bg" data-aos="fade-in">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center flex-column">
@@ -70,11 +76,10 @@
 
 
     <!--Square Image and Text Section-->
-    <section class="mt-10" id="item-3">
-
+    <section class="my-10" id="item-3">
         <h3 class="section-title" >Servicios</h3>
         <div class="section-description">
-            <p style="font-size: 17px;">
+            <p style="font-size: 20px;">
                 Todos nuestros servicios son totalmente personalizados y se adaptan a las necesidades del cliente.
             </p>
         </div>
@@ -83,7 +88,6 @@
             <%- include('../proyectos/proyecto') %>
                 <%- include('../proyectos/modals') %>
         </div>
-
     </section>
 
     <!--Clients-->
@@ -158,7 +162,7 @@
     </section>
 
 
-    <section class="mt-10 mb-5" data-aos="fade-in">
+    <section class="mt-5 mb-5" data-aos="fade-in">
         <%- include('../descripcion/frase') %>
     </section>
 
@@ -187,9 +191,14 @@
             list-style-type: disc !important;
         }
     </style>
-    <section class="mt-7 mb-5" data-aos="fade-up">
-        <h3 class="section-title mb-4" >Casos de éxito</h3>
-        <div class="aos-init aos-animate">
+    <section class="my-10" data-aos="fade-up">
+        <h3 class="section-title" style="margin-bottom: 2rem;">Casos de éxito</h3>
+        <div class="section-description">
+            <p style="font-size: 20px;">
+                Conoce nuestros casos de éxito sobre estrategia, tiempos de implementación y mejora en diferentes áreas de diversas empresas.
+            </p>
+        </div>
+        <div class="mt-5 aos-init aos-animate">
             <%- include('../use_cases/use.cases.ejs') %>
         </div>
     </section>

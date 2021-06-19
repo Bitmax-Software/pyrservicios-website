@@ -83,7 +83,29 @@
 }
 
 .years-experience:before{
-    content: "11" !important;
+    content: "12" !important;
     font-family: "Barlow", sans-serif !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
+}
+.clientes-satisfechos:before{
+  content: "+30" !important;
+  font-family: "Barlow", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.servicios-brindados:before{
+  content: "4" !important;
+  font-family: "Barlow", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.carrousel-title{
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 3px #222a4b;
+}
+
+.carrousel-description{
+  font-weight: 300;
+  text-shadow: 3px 3px 3px #222a4b;
 }
