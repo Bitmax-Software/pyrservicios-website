@@ -420,6 +420,7 @@ transition: opacity 1s, visibility 1s;
 }
 .question-conteiner-icon i {
   color:rgba(0,0,0,.5);
+  background-color: #f8f9fa!important;
 }
 .question-conteiner-icon:hover .pyr-icon--text, .question-conteiner-icon:hover i{
   color:var(--primary-color) !important;
