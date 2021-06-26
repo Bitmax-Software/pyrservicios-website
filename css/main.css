@@ -611,6 +611,17 @@ i[class*="bi-arrow-"]{
   margin: 0px
 }
 
+.social-networks-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-networks-container  > .logo {
+  width: 8rem;
+  margin-top: -20px;
+
+}
+
 
 @media screen and (max-width: 992px){
   .nav-link {
