@@ -10,6 +10,7 @@
       <div class="carousel-info" >
         <h1 class="carousel-title" >AISLAMIENTO TÉRMICO</h1>
         <h4 class="carousel-subtitle"  >Industrias - Comercio - Vivienda</h4>
+        <a onClick="document.getElementById('item-2').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="carousel-button"><span>Ver más </span></a>
       </div>
     </div>
     <div class="carousel-item carousel-item2">
@@ -17,6 +18,7 @@
       <div class="carousel-info">
         <h1 class="carousel-title">ACONDICIONAMIENTO</h1>
         <h4 class="carousel-subtitle">Espacios en general</h4>
+        <a onClick="document.getElementById('item-3').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="carousel-button"><span>Ver más </span></a>
       </div>
     </div>
     <div class="carousel-item carousel-item2">
@@ -24,6 +26,7 @@
       <div class="carousel-info">
         <h1 class="carousel-title">PROYECTO INTEGRAL</h1>
         <h4 class="carousel-subtitle">Compromiso, liderazgo y participación activa</h4>
+        <a onClick="document.getElementById('item-3').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="carousel-button"><span>Ver más </span></a>
       </div>
     </div>
   </div>
@@ -36,3 +39,57 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+<style>
+  .carousel-title{
+    font-size: 2.1rem;
+    font-weight: 200;
+  }
+  .carousel-subtitle{
+    margin: 19px 0px;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  .carousel-button {
+    font-weight: 300;
+    z-index: 40;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #528AB4;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 4px;
+    width: 13rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px 0px;
+  }
+  
+  .carousel-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .carousel-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .carousel-button:hover span {
+    padding-right: 25px;
+    color: white;
+  }
+  
+  .carousel-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  </style>

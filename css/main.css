@@ -590,6 +590,7 @@ i[class*="bi-arrow-"]{
 }
 
 .carousel-info {
+  z-index: 30;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -600,7 +601,7 @@ i[class*="bi-arrow-"]{
   left:0px;
   font-size:1.65rem;
   color:white;
-  background:rgba(34, 42, 75, 0.90);
+  background:rgba(34, 42, 75, 0.93);
   padding:20px 30px;
 }
 
@@ -627,4 +628,15 @@ i[class*="bi-arrow-"]{
   .nav-link {
      color: #222A4B !important; 
 }
+}
+
+.label-contact-us{
+  font-size: 16px;
+    font-weight: 500;
+    color: #222A4B !important;
+}
+
+.form-field-contact-us{
+  font-size: 14px !important;
+  font-weight: 400;
 }
