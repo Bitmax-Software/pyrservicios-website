@@ -572,7 +572,27 @@ i[class*="bi-arrow-"]{
   justify-content: space-between;
 }
 
+.carousel-info {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:35%;
+  height:25%;
+  position: absolute; 
+  top:100px;
+  left:0px;
+  font-size:1.65rem;
+  color:white;
+  background:rgba(34, 42, 75, 0.90);
+  padding:20px 30px;
+}
 
+.carousel-info > * {
+  font-size:inherit;
+}
+.carousel-info > .carousel-title {
+  margin: 0px
+}
 
 
 @media screen and (max-width: 992px){
