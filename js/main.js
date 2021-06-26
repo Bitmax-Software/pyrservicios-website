@@ -178,6 +178,8 @@ const IndicatorManager = function(quantity,callback){
     indicators.push(new Indicator(i,callback)) 
   }
 
+  indicators[0].activate()
+
   for (const i of indicators) {
     i.onClick(function(index){
       self.showCurrent(index)
