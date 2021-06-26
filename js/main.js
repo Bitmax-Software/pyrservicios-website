@@ -144,9 +144,64 @@ function setAbsoluteNavbarPos(navbar){
     navbar.removeClass("bg-light navbar-light position-fixed material-shadow")
     navbar.addClass("navbar-light position-absolute top-0")
 }
-function hello(){
-  console.log("hey")
+
+const Indicator = function (i,callback){
+  const index = i
+  const node = document.createElement("i")
+  node.classList.add("bi","bi-circle-fill","mx-2","use-case-paginator")
+  node.style = "font-size:.95em;z-index:2"
+  node.addEventListener('click',function(){
+    callback(index)
+  },false)
+  this.getNode = function(){
+    return node;
+  }
+  this.onClick = function(_callback){
+    node.addEventListener('click',function(){
+      _callback(index)
+    })
+  }
+  this.activate = function(){
+    node.classList.add("paginator-active")
+  }
+  this.disable = function(){
+    node.classList.remove("paginator-active")
+  }
 }
+
+const IndicatorManager = function(quantity,callback){
+  const indicators = []
+  const indicatorContainer = document.createElement("div")
+  indicatorContainer.style= "display:flex;flex-flow: row;justify-content:center"
+  let self = this
+  for (let i = 0; i < quantity; i++) {
+    indicators.push(new Indicator(i,callback)) 
+  }
+
+  for (const i of indicators) {
+    i.onClick(function(index){
+      self.showCurrent(index)
+    })
+  }
+
+  for (const indicator of indicators) {
+    indicatorContainer.appendChild(indicator.getNode())
+  }
+
+  this.showCurrent = function(index){
+    for (let i = 0; i < indicators.length; i++) {
+      const element = indicators[i];
+      element.disable()
+    }
+    indicators[index].activate()
+  }
+
+  this.getNode = function(){
+    return indicatorContainer
+  }
+
+}
+
 const Paginator = function(target){
 
   const containers = target.children[0]
@@ -158,37 +213,10 @@ const Paginator = function(target){
   counter.classList.add("mb-2")
   counter.style = "font-size:2.0em"
   counter.textContent = `0${index}/0${final}`
-
-  const right = document.createElement("i")
-  const left = document.createElement("i")
-  left.classList.add("bi","bi-arrow-left","mx-2")
-  left.style = "font-size:1.5em;z-index:2"
-  right.classList.add("bi","bi-arrow-right","mx-2") 
-  right.style = "font-size:1.5em;z-index:2"
-  left.addEventListener('click',function(event){
-    if (index <= 1 ) return
-    
-    self.back()
+  const indicatorManager = new IndicatorManager(final,function(_index){
+    index = _index + 1
     self.showCurrent() 
-  },false)
-  right.addEventListener('click',function(event){
-    if (index >= final ) return
-    self.next()
-    self.showCurrent() 
-  },false)
-  const arrows = document.createElement("div")
-  arrows.style= "display:flex;flex-flow: row;align-items:center"
-  arrows.appendChild(left)
-  arrows.appendChild(right)
-  this.next = function(){
-    index+= 1
-    counter.textContent = `0${index}/0${final}`
-  }
-
-  this.back = function(){
-    index-= 1
-    counter.textContent = `0${index}/0${final}`
-  }
+  })
 
   this.showCurrent = function(){
     for (let i = 0; i < childrenSnap.length; i++) {
@@ -199,12 +227,10 @@ const Paginator = function(target){
     childrenSnap[index - 1].classList.add("active")
   }
 
-  const paginator = document.createElement("div")
-  paginator.style = "display:flex;justify-content:space-between"
-  paginator.appendChild(counter)
-  paginator.appendChild(arrows)
-  containers.appendChild(paginator)
+  containers.appendChild(indicatorManager.getNode())
 }
+
+
 
 
 const NavTabs = function(links){

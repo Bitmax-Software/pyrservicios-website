@@ -295,6 +295,10 @@ header {
   width: 23rem;
 }
 
+.nav-link .active {
+  background: #528AB4 !important;
+}
+
 .benefits-background{
   padding: 2px 6px;
   margin-left: 3px;
@@ -559,6 +563,19 @@ footer {
 }
 .use-cases-panel .active{
   display: block !important;
+}
+
+.use-case-paginator {
+  cursor: pointer
+}
+
+.paginator-active {
+  color:#528AB4;
+  z-index:99;
+}
+
+.paginator-active:hover {
+  color:#528AB4;
 }
 
 i[class*="bi-arrow-"]{

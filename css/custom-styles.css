@@ -50,8 +50,6 @@
 }
 
 .img-container-question{
-  border-color: #222A4B;
-  border: 3px solid;
 }
 .question-bg{
   padding: 40px 0px;
@@ -74,11 +72,11 @@
 }
 
 .casos-de-exito button:hover{
-  background-color: #222A4B !important;
+  background-color: #528AB4 !important;
   color: white !important;
 }
 .casos-de-exito .active{
-  background-color: #222A4B !important;
+  background-color: #528AB4 !important;
   color: white !important;
 }
 
