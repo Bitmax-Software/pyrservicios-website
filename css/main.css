@@ -294,6 +294,31 @@ header {
 .question-container{
   width: 23rem;
 }
+
+.benefits-background{
+  padding: 2px 6px;
+  margin-left: 3px;
+}
+.benefits-background:before{
+  content: "";
+    position: absolute;
+    left: calc(50% - -85px);
+    bottom: -1.5px;
+    width: 227px;
+    height: 39px;
+    background: #528AB4;
+}
+.benefits-background:after {
+  content: 'lámina térmica';
+    position: absolute;
+    left: calc(50% - -88.5px);
+    bottom: 11.5px;
+    width: 222px;
+    height: 26px;
+    color: aliceblue;
+}
+
+
 .phrase-background{
   padding: 2px 6px;
   margin-left: 3px;
