@@ -2,7 +2,8 @@
       duration: 1800,
       });
 var elems = document.querySelectorAll('.m-carousel');
-var instances = M.Carousel.init(elems,{duration:200});   
+var instances = M.Carousel.init(elems,{duration:200});
+ 
 
 var offset = 80
 
@@ -38,34 +39,26 @@ $(function(){
   });
 });
 
+
+
 /*END CASOS DE EXITO JS*/
 
 
 (function initModal(){
-  var triggers = document.querySelectorAll('a[modal]')
-  
 
-  var elems = document.querySelectorAll('.modal');
-  var instances = M.Modal.init(elems, {opacity:0.5});
-  addTriggerInstancesToModal(instances)(triggers)
+  var useCaseModals = M.Modal.init(document.querySelectorAll('.modal-case'),{})  
+  var useCasesCards = document.querySelectorAll('.use-case-card')
+  useCasesCards.forEach(x=>{
+    const ref = x.getAttribute("ref")
+    const modal = useCaseModals.find(x=>x.el.getAttribute("modal-ref") === ref)
+    x.addEventListener('click',function(){
+      modal.open()
+    })
+  })
+
 })()
 
-function addTriggerInstancesToModal(instances){
-  const modals = {}
-  instances.forEach((x)=>{
-    const name = x.id
-    modals[name] = x
-   })
-   return function (triggers){
-    triggers.forEach(x=>{
-      
-      x.addEventListener('click',function(event){
-         const name = x.getAttribute('modal')
-         if(modals[name])modals[name].open()
-      })
-    })
-   }
-}
+
 
 const navbar = $("nav")
 
