@@ -671,6 +671,8 @@ i[class*="bi-arrow-"]{
 .text-justify {
   text-align: justify;
   hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 .use-case-card{
   cursor: pointer;
