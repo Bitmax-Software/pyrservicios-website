@@ -640,3 +640,7 @@ i[class*="bi-arrow-"]{
   font-size: 14px !important;
   font-weight: 400;
 }
+.text-justify {
+  text-align: justify;
+  hyphens: auto;
+}
