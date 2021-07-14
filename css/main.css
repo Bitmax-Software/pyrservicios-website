@@ -306,7 +306,7 @@ header {
 .benefits-background:before{
   content: "";
     position: absolute;
-    left: calc(50% - -85px);
+    left: calc(50% - -88px);
     bottom: -1.5px;
     width: 227px;
     height: 39px;
@@ -315,7 +315,7 @@ header {
 .benefits-background:after {
   content: 'lámina térmica';
     position: absolute;
-    left: calc(50% - -88.5px);
+    left: calc(50% - -91.5px);
     bottom: 11.5px;
     width: 222px;
     height: 26px;
@@ -349,7 +349,7 @@ header {
 
 .row-clients .col{
   align-self: center;
-  text-align-last: center;
+  text-align: center;
 }
 
 .zoom {
@@ -622,7 +622,7 @@ i[class*="bi-arrow-"]{
   display:flex;
   flex-direction:column;
   justify-content:center;
-  width:35%;
+  width:25%;
   height:25%;
   position: absolute; 
   top:60%;
