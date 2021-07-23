@@ -220,11 +220,17 @@ header {
     position: relative;top:2.5vw;margin: 20px 20px; font-weight: bold;
   }
 
-  .nav-item {
-    margin: 0 2vw;
-  }
-  
 
+  .navbar-custom-links.nav-link{
+    text-indent: 5px;
+ }
+  .navbar-nav{
+    background-color: #ffff;
+  }
+
+  .about_us_item_icon_container .bi {
+    color: #528AB4;
+  }
  .section-title {
    margin: 0 20px;
    text-align: center;
