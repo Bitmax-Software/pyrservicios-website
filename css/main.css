@@ -692,6 +692,8 @@ i[class*="bi-arrow-"]{
   background-color: #528AB4;
     color: white;
     padding: 5px;
+    top: 5px;
+      position: relative;
 
 }
 .pyr_footer_logo {
@@ -736,13 +738,6 @@ i[class*="bi-arrow-"]{
     height:35px;
     right:0px;
   }
-
-  .aislamiento_termico_tag {
-
-      top: 5px;
-      position: relative;
-  }
-
   .pyr_footer_logo {
     display: none;
   }
