@@ -305,6 +305,28 @@ header {
   background: #528AB4 !important;
 }
 
+@media (max-width: 1222px){ 
+  .benefits-background{}
+  .benefits-background:before{
+      left: calc(50% - -83px) !important;
+  }
+  .benefits-background:after {
+      left: calc(50% - -85.5px) !important;
+  }
+  
+}
+
+@media (max-width: 407px){ 
+  .benefits-background{}
+  .benefits-background:before{
+      left: calc(50% - 110px) !important;
+  }
+  .benefits-background:after {
+      left: calc(50% - 107.5px) !important;
+  }
+  
+}
+
 .benefits-background{
   padding: 2px 6px;
   margin-left: 3px;
@@ -336,10 +358,10 @@ header {
 .phrase-background:before {
   content: "";
     position: fixed;
-    left: calc(50% - -2px);
-    bottom: 17.5px;
-    width: 139px;
-    height: 26px;
+    left: calc(50% - 0px);
+    bottom: 14.5px;
+    width: 142px;
+    height: 33px;
     background: #528AB4;
     transform: skew(-9deg);
     transform-origin: top;
@@ -766,3 +788,8 @@ i[class*="bi-arrow-"]{
 
 }
 
+@media (max-width: 992px){ 
+  .logo-containter {
+    width: 4rem !important;
+}
+}
