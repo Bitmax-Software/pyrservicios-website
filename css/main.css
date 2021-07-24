@@ -666,6 +666,19 @@ i[class*="bi-arrow-"]{
   margin: 0 auto
 }
 
+.aislamiento_termico_tag {
+  background-color: #528AB4;
+    color: white;
+    padding: 5px;
+
+}
+.pyr_footer_logo {
+  top: -3.0rem;
+    left: 25px;
+    position: absolute;
+    height: 10rem;
+}
+
 @media screen and (max-width: 992px){
   .nav-link {
      color: #222A4B !important; 
@@ -686,6 +699,32 @@ i[class*="bi-arrow-"]{
     width:88%;
     margin: 0 auto
   }
+  
+  .grid-container {
+    grid-template-columns: auto;
+  }
+  
+  .carousel-control-prev-icon.header{
+    width:35px;
+    height:35px;
+    left:0px;
+  }
+  .carousel-control-next-icon.header {
+    width: 35px;
+    height:35px;
+    right:0px;
+  }
+
+  .aislamiento_termico_tag {
+
+      top: 5px;
+      position: relative;
+  }
+
+  .pyr_footer_logo {
+    display: none;
+  }
+  
 }
 
 
