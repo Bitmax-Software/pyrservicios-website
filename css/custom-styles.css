@@ -56,6 +56,11 @@
   background-color: #222A4B;
   color: white;
 }
+
+.gray-section {
+  background-color: #e3e3e3;
+  padding: 40px 0px;
+}
 .navbar-custom-links{
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -63,7 +68,7 @@
 }
 
 .navbar-custom-links:hover{
-  background-color: #222A4B !important;
+  background-color: #528AB4 !important;
   color: white !important;
 }
 

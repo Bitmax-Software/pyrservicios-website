@@ -1,6 +1,7 @@
 :root {
   --primary-color : #222A4B;
-  --secondary-color : white
+  --secondary-color : white;
+  --alter-color: #528AB4;
 }
 .bg-pyr-primary {
   background-color: var(--primary-color);
@@ -17,6 +18,12 @@
 .color-pyr-secondary {
   color: var(--secondary-color);
 }
+
+.color-pyr-alter {
+  color : var(--alter-color)
+}
+
+
 
 
 header {
@@ -257,6 +264,7 @@ header {
   position: relative;
   background-color: #222A4B;
   color: white;
+  padding: 40px;
   height:180px;
   font-size:18px;
   text-align: center;
@@ -299,6 +307,9 @@ header {
 
 .question-container{
   width: 23rem;
+}
+.question-container-title {
+  color : var(--alter-color);
 }
 
 .nav-link .active {
@@ -489,10 +500,10 @@ transition: opacity 1s, visibility 1s;
   background: no-repeat 50%/100% 100%;
 }
 
-
+/* 
 .navbar-logo img {
   width:60%;height:auto
-}
+} */
 
 .pyr-icon {
   width: 5vw;
@@ -508,7 +519,7 @@ transition: opacity 1s, visibility 1s;
   background-color: #f8f9fa!important;
 }
 .question-conteiner-icon:hover .pyr-icon--text, .question-conteiner-icon:hover i{
-  color:var(--primary-color) !important;
+  color:var(--alter-color) !important;
 }
 @media screen and (max-width: 992px) {
   .nav-link {
@@ -569,7 +580,7 @@ footer {
 }
 
 .about_us_item {
-  border: 1px solid white;border-radius: 2px;
+  /* border: 1px solid white;border-radius: 2px; */
 }
 .about_us_item_icon_container {
   position:relative; 
@@ -596,8 +607,8 @@ footer {
 }
 
 .aislamiento_termico_title {
-  color :#222A4B !important;
-  font-weight: 500;
+  color :#528AB4 !important;
+  font-weight: 600;
 }
 
 .wrong-toast{background-color:#e53935}
@@ -697,8 +708,8 @@ i[class*="bi-arrow-"]{
 
 }
 .pyr_footer_logo {
-  top: -3.0rem;
-    left: 25px;
+  top: -5.2rem;
+    left: 15px;
     position: absolute;
     height: 10rem;
 }
@@ -786,5 +797,19 @@ i[class*="bi-arrow-"]{
 @media (max-width: 992px){ 
   .logo-containter {
     width: 4rem !important;
+}
+}
+
+.logo_header {
+  position:relative;
+  object-fit: contain;
+  width: 180%;
+  top:45px;
+  left:0px
+}
+
+@media (max-width: 992px){ 
+  .logo_header {
+    top:15px
 }
 }
