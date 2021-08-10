@@ -1,7 +1,8 @@
 :root {
   --primary-color : #222A4B;
   --secondary-color : white;
-  --alter-color: #528AB4;
+  --alter-color: #1f8ab6;
+  --bg-color-grey: rgba(128,128,128,0.11  );
 }
 .bg-pyr-primary {
   background-color: var(--primary-color);
@@ -236,7 +237,7 @@ header {
   }
 
   .about_us_item_icon_container .bi {
-    color: #528AB4;
+    color: var(--alter-color);
   }
  .section-title {
    margin: 0 20px;
@@ -260,13 +261,66 @@ header {
   quotes: "\201C""\201D""\2018""\2019";
   text-align:justify;
  }
+
+ @media (max-width: 711px){ 
+  .abous-us-bg-lightblue:before{
+    width: 205px !important;
+    height: 32px !important;
+    top: 241px !important;
+   }  
+}
+
+
+ @media (max-width: 500px){ 
+  .abous-us-bg-lightblue:before{
+    width: 179px !important;
+    height: 32px !important;
+    top: 127px !important;
+   }  
+}
+
+ @media (max-width: 476px){ 
+  .abous-us-bg-lightblue:before{
+    width: 174px !important;
+    height: 32px !important;
+    top: 161px !important;
+   }  
+}
+
+ .abous-us-bg-lightblue:before{
+  background-color: var(--alter-color);
+    content: "";
+    display: inline-block;
+    width: 352px;
+    height: 32px;
+    margin-right: 5px;
+    position: absolute;
+    left: 0rem;
+    top: 210px;
+    z-index: -1;
+ }
+
+ .signal-span-top{
+  font-size: 45px;
+    top: -23px;
+    left: 91px;
+    position: absolute;
+ }
+
+ .signal-span-bottom{
+  font-size: 45px;
+  bottom: -9px;
+  position: absolute;
+ }
+
  .phrase-container {
   position: relative;
-  background-color: #222A4B;
+  background-color: var(--primary-color);
   color: white;
   padding: 40px;
-  height:180px;
-  font-size:18px;
+  height:300px;
+  font-size:30px;
+  font-weight: bold;
   text-align: center;
  }
  .phrase-container .container{
@@ -313,7 +367,7 @@ header {
 }
 
 .nav-link .active {
-  background: #528AB4 !important;
+  background: var(--alter-color) !important;
 }
 
 @media (max-width: 1222px){ 
@@ -349,7 +403,7 @@ header {
     bottom: -1.5px;
     width: 227px;
     height: 39px;
-    background: #528AB4;
+    background: var(--alter-color);
 }
 .benefits-background:after {
   content: 'lámina térmica';
@@ -373,7 +427,7 @@ header {
     bottom: 14.5px;
     width: 142px;
     height: 33px;
-    background: #528AB4;
+    background: var(--alter-color);
     transform: skew(-9deg);
     transform-origin: top;
 }
@@ -516,12 +570,24 @@ transition: opacity 1s, visibility 1s;
 }
 .question-conteiner-icon i {
   color:rgba(0,0,0,.5);
-  background-color: #f8f9fa!important;
 }
 .question-conteiner-icon:hover .pyr-icon--text, .question-conteiner-icon:hover i{
   color:var(--alter-color) !important;
 }
+
+.hr-benefits{
+  position: absolute;
+            width: 38.1rem;
+            text-align: left;
+            margin-left: 0;
+            top: 13rem;
+            left: 11.7rem;
+}
+
 @media screen and (max-width: 992px) {
+  .hr-benefits{
+    display: none;
+  }
   .nav-link {
     color: white !important;
   }
@@ -556,7 +622,7 @@ transition: opacity 1s, visibility 1s;
   
 }
 footer {
-  background-color: #222A4B;
+  background-color: var(--primary-color);
   color: white
 }
 
@@ -586,11 +652,11 @@ footer {
   position:relative; 
   top:-32px; 
   left: 35px;
-  background: #222A4B;
+  background: var(--primary-color);
 }
 .about_us_item_icon {
   font-size:40px;
-  background:#222A4B;
+  background:var(--primary-color);
   padding:0px 15px
 }
 .about_us_item_text {
@@ -607,14 +673,14 @@ footer {
 }
 
 .aislamiento_termico_title {
-  color :#528AB4 !important;
+  color :var(--alter-color) !important;
   font-weight: 600;
 }
 
 .wrong-toast{background-color:#e53935}
 .good-toast{background-color:#43a047}
 .nav-link {
-  color: #222A4B !important; 
+  color: var(--primary-color) !important; 
 }
 
 .use-cases-info-container {
@@ -638,12 +704,12 @@ footer {
 }
 
 .paginator-active {
-  color:#528AB4;
+  color: var(--alter-color);
   z-index:99;
 }
 
 .paginator-active:hover {
-  color:#528AB4;
+  color: var(--alter-color);
 }
 
 i[class*="bi-arrow-"]{
@@ -700,7 +766,7 @@ i[class*="bi-arrow-"]{
 }
 
 .aislamiento_termico_tag {
-  background-color: #528AB4;
+  background-color: var(--alter-color);
     color: white;
     padding: 5px;
     top: 5px;
@@ -716,7 +782,7 @@ i[class*="bi-arrow-"]{
 
 @media screen and (max-width: 992px){
   .nav-link {
-     color: #222A4B !important; 
+     color: var(--primary-color) !important; 
 }
   .usecases-grid-container{
     display:grid;
@@ -759,7 +825,7 @@ i[class*="bi-arrow-"]{
 .label-contact-us{
   font-size: 16px;
     font-weight: 500;
-    color: #222A4B !important;
+    color: var(--primary-color) !important;
 }
 
 .form-field-contact-us{
@@ -780,7 +846,7 @@ i[class*="bi-arrow-"]{
   width:100%;
 }
 .usecase-list > li{
-  color: #528AB4;
+  color: var(--alter-color);
   margin: 5px 0;
   font-weight: 600;
   font-size:1.1rem;

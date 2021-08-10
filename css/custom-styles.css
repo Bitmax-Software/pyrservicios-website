@@ -1,5 +1,5 @@
 .square-secondary{
-  background-color: #f8f9fa;  
+  background-color: var(--bg-color-grey);  
   width: 2rem;
   height: 2rem;
 }
@@ -44,7 +44,10 @@
 .body-font{
   font-family: "Barlow", sans-serif !important;
 }
-
+body {
+  font-family: "Barlow", sans-serif !important;
+  background-color: var(--bg-color-grey) !important;
+}
 .testimonial-footer-bg{
   background-color:white;
 }
@@ -53,8 +56,9 @@
 }
 .question-bg{
   padding: 40px 0px;
-  background-color: #222A4B;
+  background-color: var(--primary-color);
   color: white;
+  z-index: -2;
 }
 
 .gray-section {
@@ -64,24 +68,24 @@
 .navbar-custom-links{
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  color: #222A4B !important;
+  color: var(--primary-color) !important;
 }
 
 .navbar-custom-links:hover{
-  background-color: #528AB4 !important;
+  background-color: var(--alter-color) !important;
   color: white !important;
 }
 
 .casos-de-exito button{
-  color: #222A4B !important;
+  color: var(--primary-color) !important;
 }
 
 .casos-de-exito button:hover{
-  background-color: #528AB4 !important;
+  background-color: var(--alter-color) !important;
   color: white !important;
 }
 .casos-de-exito .active{
-  background-color: #528AB4 !important;
+  background-color: var(--alter-color) !important;
   color: white !important;
 }
 
@@ -105,10 +109,10 @@
 .carrousel-title{
   font-weight: 500;
   letter-spacing: 2px;
-  text-shadow: 3px 3px 3px #222a4b;
+  text-shadow: 3px 3px 3px var(--primary-color);
 }
 
 .carrousel-description{
   font-weight: 300;
-  text-shadow: 3px 3px 3px #222a4b;
+  text-shadow: 3px 3px 3px var(--primary-color);
 }
