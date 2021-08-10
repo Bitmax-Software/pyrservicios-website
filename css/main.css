@@ -1,5 +1,5 @@
 :root {
-  --primary-color : #222A4B;
+  --primary-color : #19264b;
   --secondary-color : white;
   --alter-color: #1f8ab6;
   --bg-color-grey: rgba(128,128,128,0.11  );
@@ -495,7 +495,7 @@ top: 0;
 bottom: 0;
 left: 0;
 right: 0;
-background: rgba(34, 42, 75, 0.85);
+background: rgba(25, 38, 75, 0.85);
 color: #fff;
 visibility: hidden;
 opacity: 0;
@@ -736,7 +736,7 @@ i[class*="bi-arrow-"]{
   left:0px;
   font-size:1.65rem;
   color:white;
-  background:rgba(34, 42, 75, 0.93);
+  background:rgba(25, 38, 75, 0.93);
   padding:20px 30px;
 }
 
