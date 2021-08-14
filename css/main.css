@@ -301,10 +301,7 @@ header {
  }
 
  .signal-span-top{
-  font-size: 45px;
-    top: -23px;
-    left: 91px;
-    position: absolute;
+  font-size: 50px;
  }
 
  .signal-span-bottom{
@@ -860,9 +857,14 @@ i[class*="bi-arrow-"]{
 
 }
 
+.navbar-collapse.collapse.show {
+  z-index:1;
+}
 @media (max-width: 992px){ 
   .logo-containter {
-    width: 4rem !important;
+    z-index:-1;
+    width: 7.5rem !important;
+    height: 5rem !important;
 }
 }
 
@@ -870,7 +872,7 @@ i[class*="bi-arrow-"]{
   position:relative;
   object-fit: contain;
   width: 180%;
-  top:45px;
+  top:65px;
   left:0px
 }
 
