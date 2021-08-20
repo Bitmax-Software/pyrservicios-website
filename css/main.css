@@ -837,6 +837,7 @@ i[class*="bi-arrow-"]{
 }
 .use-case-card{
   cursor: pointer;
+  height: 95%;
 }
 .img-container-modal{
   height:100%;
@@ -881,3 +882,27 @@ i[class*="bi-arrow-"]{
     top:15px
 }
 }
+
+.carousel_use_case-inner > .item.next,
+.carousel_use_case-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(33%, 0, 0);
+    -ms-transform: translate3d(33%, 0, 0);
+  	-o-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
+ }
+  
+.carousel_use_case-inner > .item.prev,
+.carousel_use_case-inner > .item.active.left {
+  left: 0;
+  -webkit-transform: translate3d(-33%, 0, 0);
+  -ms-transform: translate3d(-33%, 0, 0);
+  -o-transform: translate3d(-33%, 0, 0);
+  transform: translate3d(-33%, 0, 0);
+}
+
+.carousel_use_case-inner .active.left { left: -33%; }
+.carousel_use_case-inner .active.right { left: 33%; }
+.carousel_use_case-inner .next        { left:  33%; }
+.carousel_use_case-inner .prev        { left: -33%; }
+.carousel-control.left,.carousel-control.right {background-image:none;}

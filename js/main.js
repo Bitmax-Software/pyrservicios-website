@@ -2,11 +2,30 @@
       duration: 1800,
       });
 var elems = document.querySelectorAll('.m-carousel');
+const MD_SIZE = 900
+const SMALL_SIZE = 750
+
+
 var clientCarouselHtml = document.querySelectorAll('.client-carousel')
+const splide = new Splide( '.splide',{perPage: getWindowsWidth() > SMALL_SIZE ? 3 : 2,rewind:false,perMove:1} ).mount();
+$(window).resize(function() {
+  splide.options= {
+    rewind:false,
+    perMove:1,
+    perPage:getWindowsWidth() > SMALL_SIZE ? 3 : 2
+  }
+});
+
+
+
 /* console.log(clientCarouselHtml)
 var clientCarousel = M.Carousel.init(clientCarouselHtml,{duration:200}) */
+
+
+
 var instances = M.Carousel.init(elems,{duration:200});
- 
+
+
 
 var offset = 80
 
@@ -25,6 +44,11 @@ $('.navbar-nav li a').click(function(event) {
 $('.carousel').carousel({
   interval: 5000
 });
+
+
+function getWindowsWidth(){
+  return this.window.outerWidth
+}
 
 /*START CASOS DE EXITO JS*/
 
