@@ -8,6 +8,10 @@
   background-color: var(--primary-color);
 }
 
+.bg-pyr-alter {
+  background-color: var(--alter-color);
+}
+
 .bg-pyr-secondary {
   background-color: var(--secondary-color);
 }
@@ -310,6 +314,11 @@ header {
   position: absolute;
  }
 
+ @media (max-width: 476px){ 
+  .phrase-container{
+    height:350px !important;
+   }  
+}
  .phrase-container {
   position: relative;
   background-color: var(--primary-color);
