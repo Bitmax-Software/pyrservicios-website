@@ -116,3 +116,11 @@ body {
   font-weight: 300;
   text-shadow: 3px 3px 3px var(--primary-color);
 }
+
+.splide-clients .splide__pagination__page{
+  background: var(--alter-color);
+}
+.splide-clients .splide__pagination__page.is-active{
+  background: var(--alter-color);
+  opacity: .9;
+}
