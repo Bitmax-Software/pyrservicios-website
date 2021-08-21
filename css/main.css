@@ -771,10 +771,10 @@ i[class*="bi-arrow-"]{
 
 }
 .pyr_footer_logo {
-  top: -5.2rem;
+  top: -3.5rem;
     left: 15px;
     position: absolute;
-    height: 10rem;
+    height: 6rem;
 }
 
 @media screen and (max-width: 992px){
