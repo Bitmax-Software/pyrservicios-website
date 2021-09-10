@@ -305,12 +305,17 @@ header {
  }
 
  .signal-span-top{
-  font-size: 50px;
+  font-size: 65px;
+  color: var(--alter-color);
+  top: -32px;
+    left: -27px;
+  position: absolute;
  }
 
  .signal-span-bottom{
-  font-size: 45px;
-  bottom: -9px;
+  color: var(--alter-color);
+  font-size: 65px;
+  bottom: -28px;
   position: absolute;
  }
 
