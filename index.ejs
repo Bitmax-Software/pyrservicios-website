@@ -2,17 +2,18 @@
 <html lang="es">
 <head>
 	<title>PYRSERVICIOS - INICIO</title>
-
-	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Somos un equipo de profesionales con una amplia experiencia y especializaciones en soluciones arquitectónicas integrales">
-  	<meta name="keywords" content="aislamiento térmico acondicionamiento locales almacenes bpa">
+  	<meta name="keywords" content="aislamiento térmico, acondicionamiento locales, almacenes bpa">
 	<meta name="author" content="PYRSERVICIOS">
 	<meta name="og:image" content="assets/img/favicon.png">
+	<meta name="og:url" content="https://pyrservicios.com">
+	<meta name="og:image" content="assets/img/favicon.png">
+	<meta name="robots" content="index, follow">
+
 	<link href="assets/img/favicon.png" rel="icon">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i">
-
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="css/bootstrap-icons/font/bootstrap-icons.css">
  
@@ -30,28 +31,16 @@
   <script src="js/smtp.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/isotipe.js" defer></script>
-  <script>
-	
-	</script>
 </head>
-<body >
+<body>
 	<!-- Header -->
+	<%- include('components/header/navbar') %>
 	
-		<%- include('components/header/navbar') %>
-		
-	
-
 	<!-- Content --> 
 	<%- include('components/header/carousel') %>
-		<%- include('components/body/landing') %>
+	<%- include('components/body/landing') %>
+
 	<!-- Footer -->
-
-
-		<%- include('components/footer/footer') %>
-
-
-		
-		
+	<%- include('components/footer/footer') %>
 </body>
-
 </html>

@@ -1,3 +1,5 @@
+/*Developed by: Bitmax Software*/
+
 :root {
   --primary-color : #19264b;
   --secondary-color : white;
@@ -920,3 +922,26 @@ i[class*="bi-arrow-"]{
 .carousel_use_case-inner .next        { left:  33%; }
 .carousel_use_case-inner .prev        { left: -33%; }
 .carousel-control.left,.carousel-control.right {background-image:none;}
+
+#filters {
+  display: inline;
+}
+
+#filters li {
+  display: inline;
+  margin: 0px 10px;
+}
+#filters li a{
+  color: var(--primary-color);
+}
+
+#filters li a:hover{
+  color: var(--alter-color);
+}
+.menu-container {
+  text-align: center;
+}
+
+.project-detail li {
+  list-style-type: disc !important;
+}
