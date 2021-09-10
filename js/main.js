@@ -125,20 +125,30 @@ function sendEmail(){
     const btn = $("#send_form")
     const description = $("#contact_msg")
     btn.prop("disabled",true)
-    fetch(URL,{
+    fetch("/php/mail.php",{
       method:"POST", 
       cache:'no-cache',
       headers:{
         'Content-Type': 'application/json'
       },
       body:JSON.stringify({
-        from:email.val(),
-        msg: "Nombre Client: "+ name.val() + "\n" + "Numero: " + phone.val() + "\n"+ description.val()
+        name:name,
+        email:email,
+        phone:phone,
+        message:description
+        /* from:email.val(),
+        msg: "Nombre Client: "+ name.val() + "\n" + "Numero: " + phone.val() + "\n"+ description.val() */
       })
     })
-    .then(x=>x.json())
-    .then(x=>{M.toast({html: x.msg,classes:"good-toast"});btn.prop("disabled",false)})
-    .catch(x=>{M.toast({html: x.msg,classes:"wrong-toast"});btn.prop("disabled",false)})
+    .then(x=>{
+      if(x.ok){
+        M.toast({html: "Gracias por contactarnos!",classes:"good-toast"});
+        btn.prop("disabled",false)
+        return
+      } 
+      M.toast({html: "Tuvimos un problema al recibir tu mensaje. Intentelo de nuevo",classes:"wrong-toast"});btn.prop("disabled",false)   
+    })
+    .catch(x=>{console.log(x);M.toast({html: "Tuvimos un problema al recibir tu mensaje. Intentelo de nuevo",classes:"wrong-toast"});btn.prop("disabled",false)})
 
 
 }
