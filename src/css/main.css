@@ -1,5 +1,13 @@
 /*Developed by: Bitmax Software*/
 
+@import "boostrap/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "aos.css";
+@import "materialize.css";
+@import "custom-styles.css";
+@import "splide.min.css";
+
+
 :root {
   --primary-color : #19264b;
   --secondary-color : white;

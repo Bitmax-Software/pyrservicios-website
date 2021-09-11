@@ -1,4 +1,15 @@
-	  
+import "./isotipe.js"
+import "./boostrap/bootstrap.bundle.js"
+import "./materialize.js"
+import AOS from "./aos.js"
+import "./splide.js"
+import "../css/main.css"
+
+
+var jQueryBridget = require('jquery-bridget');
+var Isotope = require('isotope-layout');
+jQueryBridget( 'isotope', Isotope, $ );
+
 var elems = document.querySelectorAll('.m-carousel');
 const MD_SIZE = 900
 const SMALL_SIZE = 750
@@ -54,7 +65,7 @@ $('.carousel').carousel({
 
 
 function getWindowsWidth(){
-  return this.window.outerWidth
+  return window.outerWidth
 }
 
 /*START CASOS DE EXITO JS*/
@@ -77,20 +88,26 @@ $(function(){
 
 /*END CASOS DE EXITO JS*/
 
-
+/* 
 (function initModal(){
 
-  var useCaseModals = M.Modal.init(document.querySelectorAll('.modal-case'),{})  
+  var useCaseModals = M.Modal.init(document.querySelectorAll('.modal-case'),{})
+  
   var useCasesCards = document.querySelectorAll('.use-case-card')
   useCasesCards.forEach(x=>{
     const ref = x.getAttribute("ref")
-    const modal = useCaseModals.find(x=>x.el.getAttribute("modal-ref") === ref)
+    const modal = useCaseModals.find(m=>{
+      console.log(m.el.getAttribute("modal-ref") +", "+ ref)
+      return m.el.getAttribute("modal-ref").includes(ref)
+    } )
+    
     x.addEventListener('click',function(){
-      modal.open()
+      if (modal)
+        modal.open()
     })
   })
 
-})()
+})() */
 
 
 
