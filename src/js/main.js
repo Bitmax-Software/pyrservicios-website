@@ -149,10 +149,10 @@ function sendEmail(){
         'Content-Type': 'application/json'
       },
       body:JSON.stringify({
-        name:name,
-        email:email,
-        phone:phone,
-        message:description
+        name:name.val(),
+        email:email.val(),
+        phone:phone.val(),
+        message:description.val()
         /* from:email.val(),
         msg: "Nombre Client: "+ name.val() + "\n" + "Numero: " + phone.val() + "\n"+ description.val() */
       })
