@@ -105,6 +105,18 @@ header {
     display: flex;
     justify-content: space-around;
 } 
+@media (max-width: 476px){ 
+  .testimonial_section {
+    margin: 0px !important;
+    margin-top: 50px!important;
+    margin-bottom: 50px!important;
+    margin-left: -50px !important;
+    margin-right: -50px !important;
+}
+  .testimonial-control{
+    display: none!important; 
+  }
+}
 
 .contact_us_section {
     flex: 1 1 200px;
@@ -330,8 +342,17 @@ header {
  }
 
  @media (max-width: 476px){ 
+   .signal-span-top{
+    font-size: 54px !important;
+
+   }
+  .signal-span-bottom{
+  font-size: 54px !important;
+ }
+
   .phrase-container{
-    height:350px !important;
+    height:240px !important;
+    font-size:19px !important;
    }  
 }
  .phrase-container {
@@ -605,9 +626,40 @@ transition: opacity 1s, visibility 1s;
             left: 11.7rem;
 }
 
+.hr-benefits-mobile{
+  display: none;
+  position: absolute;
+    width: 1rem;
+    height: 8.1rem;
+    border: none;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    top: 1rem;
+    left: 9.85rem;
+    z-index: 1;
+}
+
+.hr-benefits-mobile2{
+  display: none;
+  position: absolute;
+    width: 1rem;
+    height: 8.1rem;
+    border: none;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    top: 1rem;
+    left: 9.85rem;
+    z-index: 1;
+}
+
 @media screen and (max-width: 992px) {
   .hr-benefits{
     display: none;
+  }
+
+  .hr-benefits-mobile{
+    display: initial !important;
+  }
+  .hr-benefits-mobile2{
+    display: initial !important;
   }
   .nav-link {
     color: white !important;

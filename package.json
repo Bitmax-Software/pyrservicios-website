@@ -16,9 +16,9 @@
   },
   "scripts": {
     "dev": "npx nodemon",
-    "render":"node index.js",
+    "render": "node index.js",
     "prestart": "npm run render",
-    "prebuild":"npm run render",
+    "prebuild": "npm run render",
     "start": "npx webpack-dev-server",
     "build": "npx webpack build",
     "test": "echo \"Error: no test specified\" && exit 1"
