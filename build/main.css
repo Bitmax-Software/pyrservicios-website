@@ -10741,8 +10741,10 @@ header {
   
   .m-carousel .m-carousel-item {
     visibility: hidden;
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    width: 40vw;
+    height: 40vw;
     position: absolute;
     top: 15px;
     left: 0;

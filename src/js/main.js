@@ -41,7 +41,7 @@ var clientCarousel = M.Carousel.init(clientCarouselHtml,{duration:200}) */
 
 
 
-var instances = M.Carousel.init(elems,{duration:200});
+var instances = M.Carousel.init(elems,{duration:200,indicators:true});
 
 
 

@@ -344,6 +344,10 @@ header {
  }
 
  @media (max-width: 476px){ 
+   .about_us_title_mobile{
+     margin-bottom: 2rem;
+   }
+
    .signal-span-top{
     font-size: 54px !important;
 
@@ -630,26 +634,20 @@ transition: opacity 1s, visibility 1s;
 
 .hr-benefits-mobile{
   display: none;
-  position: absolute;
-    width: 1rem;
+    position: absolute;
     height: 8.1rem;
     border: none;
     border-left: 1px solid rgba(0,0,0,0.2);
-    top: 1rem;
-    left: 9.85rem;
-    z-index: 1;
+    left: 11.49px;
 }
 
 .hr-benefits-mobile2{
   display: none;
-  position: absolute;
-    width: 1rem;
+    position: absolute;
     height: 8.1rem;
     border: none;
     border-left: 1px solid rgba(0,0,0,0.2);
-    top: 1rem;
-    left: 9.85rem;
-    z-index: 1;
+    left: 11.49px;
 }
 
 @media screen and (max-width: 992px) {
