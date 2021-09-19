@@ -10739,6 +10739,8 @@ header {
     font-size: 15px;
   }
   
+
+
   .m-carousel .m-carousel-item {
     visibility: hidden;
     max-width: 300px;
@@ -10752,6 +10754,7 @@ header {
 
   
   .m-carousel .indicators {
+    display: none;
     position: absolute;
     text-align: center;
     left: 0;
@@ -10767,14 +10770,16 @@ header {
     height: 8px;
     width: 8px;
     margin: 24px 4px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--alter-color);
+    opacity: .7;
     -webkit-transition: background-color .3s;
     transition: background-color .3s;
     border-radius: 50%;
   }
   
   .m-carousel .indicators .indicator-item.active {
-    background-color: #fff;
+    background-color: var(--alter-color);
+    opacity: .9;
   }
   
   .m-carousel.scrolling .m-carousel-item .materialboxed,
@@ -10900,6 +10905,18 @@ header {
  }
 
  @media (max-width: 476px){ 
+  .section-description p {
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+  .m-carousel .indicators {
+    display: initial;
+  }
+   .about_us_title_mobile{
+     margin-bottom: 2rem;
+   }
+
    .signal-span-top{
     font-size: 54px !important;
 
@@ -11186,26 +11203,20 @@ transition: opacity 1s, visibility 1s;
 
 .hr-benefits-mobile{
   display: none;
-  position: absolute;
-    width: 1rem;
+    position: absolute;
     height: 8.1rem;
     border: none;
     border-left: 1px solid rgba(0,0,0,0.2);
-    top: 1rem;
-    left: 9.85rem;
-    z-index: 1;
+    left: 11.49px;
 }
 
 .hr-benefits-mobile2{
   display: none;
-  position: absolute;
-    width: 1rem;
+    position: absolute;
     height: 8.1rem;
     border: none;
     border-left: 1px solid rgba(0,0,0,0.2);
-    top: 1rem;
-    left: 9.85rem;
-    z-index: 1;
+    left: 11.49px;
 }
 
 @media screen and (max-width: 992px) {
