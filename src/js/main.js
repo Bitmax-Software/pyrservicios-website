@@ -330,3 +330,12 @@ for (let index = 0; index < useCases.length; index++) {
   
 }
 
+
+var el = document.querySelectorAll(".nav-link-mobile"); // this element contains more than 1 DOMs.
+    for(var i =0; i < el.length; i++) {
+        el[i].onclick = function() {  
+          if($(window).width()<477){
+            $('#custom-menu-button').click();
+          }
+        };
+    }
