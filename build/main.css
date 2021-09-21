@@ -10662,6 +10662,30 @@ header {
     justify-content: space-around;
 } 
 @media (max-width: 476px){ 
+  .navbar-collapse {
+    height: 100vh;
+  }
+  
+  .collapse-mobile-navbar-menu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100vw;
+    /*height: 100vh;*/
+    background-color: white;
+  }
+  .collapse-mobile-navbar-menu ul{
+    padding: 65px 0px;
+    height: 100vh;
+    justify-content: space-around;
+  }
+
+  .collapse-mobile-navbar-menu ul li{
+    width: 100%;
+    text-align: center;
+  }
+  
   .testimonial-avatar-mobile{
     margin-bottom: 12px;
   }
@@ -11586,3 +11610,19 @@ i[class*="bi-arrow-"]{
 .project-detail li {
   list-style-type: disc !important;
 }
+
+
+
+button[aria-expanded="true"] > span.close {
+  display: inline;
+  opacity: 1;
+}
+button[aria-expanded="true"] > span.navbar-toggler-icon {
+  display: none;
+}
+
+button[aria-expanded="false"] > span.close {
+  display: none;
+}
+
+
