@@ -10662,6 +10662,11 @@ header {
     justify-content: space-around;
 } 
 @media (max-width: 476px){ 
+
+  .navbar-custom-links.nav-link{
+     font-weight: initial !important;
+ }
+
   .navbar-collapse {
     height: 100vh;
   }
@@ -10856,6 +10861,7 @@ header {
 
   .navbar-custom-links.nav-link{
     text-indent: 5px;
+     font-weight: 600;
  }
   .navbar-nav{
     background-color: #ffff;
