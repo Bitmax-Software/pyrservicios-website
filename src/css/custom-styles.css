@@ -124,3 +124,36 @@ body {
   background: var(--alter-color);
   opacity: .9;
 }
+
+ /* Estilo del botón flotante */
+ .whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366; /* Color verde de WhatsApp */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+/* Estilo del ícono de WhatsApp */
+.whatsapp-button i {
+  font-size: 42px;
+  line-height: 68px; /* Centrar verticalmente el ícono */
+  color: white; /* Color del ícono */
+}
+
+.phone-color {
+  color: var(--primary-color)
+}
+
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+  .carousel-item-one-mobile img {
+      object-position: right; /* Ajusta la posición a la derecha */
+  }
+}
