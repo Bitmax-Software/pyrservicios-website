@@ -137,13 +137,37 @@ body {
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 999;
+  padding-top: 14px;
 }
 
 /* Estilo del ícono de WhatsApp */
 .whatsapp-button i {
   font-size: 42px;
-  line-height: 68px; /* Centrar verticalmente el ícono */
   color: white; /* Color del ícono */
+}
+
+/* Estilo del mensaje */
+.whatsapp-message {
+  /*
+  position: fixed;
+  bottom: 70px;
+  right: 90px;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 998;*/
+  
+  position: fixed;
+    bottom: 37px;
+    right: 100px;
+    background-color: rgba(227, 227, 227, 1);
+    color: rgba(25, 38, 75, 1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(227, 227, 227, 0.1);
+    z-index: 998;
 }
 
 .phone-color {
@@ -153,7 +177,35 @@ body {
 
 /* Estilo para dispositivos móviles */
 @media (max-width: 768px) {
-  .carousel-item-one-mobile img {
+  .carousel-item-mobile img {
       object-position: right; /* Ajusta la posición a la derecha */
   }
+  .carousel-item2{
+    height: 40rem !important;
+} 
+.carousel-item2 img{
+  min-height: 40rem !important;
+} 
+.custom-navbar{
+  padding-top: 0px;
+}
+
+.services-section{
+  height: 114rem;
+}
+}
+
+@media (max-width: 500px) {
+
+.services-section{
+  height: 196rem;
+}
+.logo_header {
+  width: 156% !important;
+}
+}
+
+.custom-navbar{
+  padding-left: 0px; 
+  background-color: rgba(25, 38, 75) !important;
 }

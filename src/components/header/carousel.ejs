@@ -3,9 +3,10 @@
     <li data-target="#carouselProjectImages" data-slide-to="0" class="active"></li>
     <li data-target="#carouselProjectImages" data-slide-to="1"></li>
     <li data-target="#carouselProjectImages" data-slide-to="2"></li>
+    <li data-target="#carouselProjectImages" data-slide-to="3"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item carousel-item2 carousel-item-one-mobile active" style="position:relative">
+    <div class="carousel-item carousel-item2 carousel-item-mobile active" style="position:relative">
       <img class="d-block w-100" src="assets/img/carrousel/aislamiento_termico_2.png" alt="First slide">
       <div class="carousel-info" >
         <h1 class="carousel-title" >AISLAMIENTO TÉRMICO</h1>
@@ -13,21 +14,31 @@
         <a onClick="document.getElementById('item-2').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="carousel-button"><span>Ver más </span></a>
       </div>
     </div>
-    <div class="carousel-item carousel-item2">
-      <img class="d-block w-100" src="assets/img/carrousel/acondicionamiento.jpg" alt="Second slide">
+    <div class="carousel-item carousel-item2 carousel-item-mobile">
+      <img class="d-block w-100" src="assets/img/carrousel/acondicionamiento.png" alt="Second slide">
       <div class="carousel-info">
         <h1 class="carousel-title">ACONDICIONAMIENTO</h1>
         <h4 class="carousel-subtitle">Espacios en general</h4>
         <a onClick="document.getElementById('item-3').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="carousel-button"><span>Ver más </span></a>
       </div>
     </div>
-    <div class="carousel-item carousel-item2">
-      <img class="d-block w-100" src="assets/img/carrousel/proyecto_integral.jpg" alt="Third slide">
+    <div class="carousel-item carousel-item2 carousel-item-mobile">
+      <img class="d-block w-100" src="assets/img/carrousel/proyecto_integral.png" alt="Third slide">
       <div class="carousel-info">
         <h1 class="carousel-title">PROYECTO INTEGRAL</h1>
         <h4 class="carousel-subtitle">Compromiso, liderazgo y participación activa</h4>
         <a onClick="document.getElementById('item-3').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="carousel-button"><span>Ver más </span></a>
       </div>
+    </div>
+    <div class="carousel-item carousel-item2 carousel-item-mobile">
+      <img class="d-block w-100" src="assets/img/carrousel/portada.png" alt="Four slide">
+      <!--
+      <div class="carousel-info">
+        <h1 class="carousel-title">PROYECTO INTEGRAL</h1>
+        <h4 class="carousel-subtitle">Compromiso, liderazgo y participación activa</h4>
+        <a onClick="document.getElementById('item-3').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="carousel-button"><span>Ver más </span></a>
+      </div>
+    -->
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselProjectImages" role="button" data-slide="prev">
@@ -56,7 +67,7 @@
     z-index: 40;
     border-radius: 4px;
     background-color: transparent;
-    border: 1px solid var(--alter-color);
+    border: 1px solid rgba(25, 38, 75);
     color: #FFFFFF;
     text-align: center;
     font-size: 1rem;

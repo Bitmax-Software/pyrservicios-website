@@ -1,42 +1,72 @@
-<!DOCTYPE html>
 <html lang="es">
-<head>
-	<title>PYRSERVICIOS - INICIO</title>
+  <head>
+    <title>PYRSERVICIOS - INICIO</title>
 
-	
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Somos un equipo de profesionales con una amplia experiencia y especializaciones en soluciones arquitectónicas integrales">
-  	<meta name="keywords" content="aislamiento térmico acondicionamiento locales almacenes bpa">
-	<meta name="author" content="PYRSERVICIOS">
-	<meta name="og:image" content="https://pyrservicios.com/assets/img/favicon-with-background.png">
-	<link href="assets/img/favicon.png" rel="icon">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i">
-  
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Somos un equipo de profesionales con una amplia experiencia y especializaciones en soluciones arquitectónicas integrales">
+    <meta
+      name="keywords"
+      content="aislamiento térmico acondicionamiento locales almacenes bpa">
+    <meta
+      name="author"
+      content="PYRSERVICIOS">
+    <meta
+      name="og:image"
+      content="https://pyrservicios.com/assets/img/favicon-with-background.png">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i">
   <script>
-	
-	</script>
-</head>
-<body >
-	<!-- Header -->
-	
-		<%- include ('./components/header/navbar') %>
-		
-	
-
-	<!-- Content --> 
-	<%- include ('./components/header/carousel') %>
+    // Función para cerrar el popup
+function closePopup() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('popup').style.display = 'none';
+}
+  </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <%- include ('./components/header/navbar') %>
+    <!-- Content -->
+    <%- include ('./components/header/carousel') %>
 		<%- include ('./components/body/landing') %>
-	<!-- Footer -->
+    <!-- Footer -->
+    <%- include ('./components/footer/footer') %>
+	
 
-
-		<%- include ('./components/footer/footer') %>
-
-
+<!-- Overlay y Popup -->
+<div class="overlay" id="overlay">
+  <div class="popup" id="popup">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <video controls autoplay muted>
+        <source src="assets/img/video_modal.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+  </div>
+</div>
 		
-		<a href="https://wa.me/+51991672106" target="_blank" class="whatsapp-button">
-			<i class="bi bi-whatsapp"></i>
-		</a>
-</body>
+	<a
+      href="https://wa.me/+51991672106"
+      target="_blank"
+      class="whatsapp-button">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Mensaje al lado del botón -->
+    <div
+      class="whatsapp-message"
+      id="whatsapp-message">
+      Hola, estamos aquí para ayudarte
+    </div>       
+
+  </body>
+
+
+  <script>
+</script>
 
 </html>

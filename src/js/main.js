@@ -36,6 +36,23 @@ $(window).resize(function() {
 AOS.init({
   duration: 1800,
   });
+
+  /* */
+    
+  // Muestra el overlay al cargar la página
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('overlay').style.display = 'flex';
+    showPopup();
+});
+
+// Función para mostrar el popup
+function showPopup() {
+    document.getElementById('popup').style.display = 'block';
+}
+
+
+
+  /* */
 /* console.log(clientCarouselHtml)
 var clientCarousel = M.Carousel.init(clientCarouselHtml,{duration:200}) */
 
