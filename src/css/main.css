@@ -1125,3 +1125,16 @@ button[aria-expanded="false"] > span.close {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+@media (max-width: 992px){ 
+  .popup {
+    width: 195px;
+    height: 345px;
+  }
+  .close-btn {
+    right: 0px;
+      top: -13px;
+      left: 15px;
+  }
+}
