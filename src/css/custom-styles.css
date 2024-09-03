@@ -209,3 +209,6 @@ body {
   padding-left: 0px;
   background-color: rgba(25, 38, 75) !important;
 }
+.clients .splide__pagination{
+  display: none;
+}
