@@ -1138,3 +1138,16 @@ button[aria-expanded="false"] > span.close {
       left: 15px;
   }
 }
+
+.list-of-recomendations{
+  list-style-type: disc;
+}
+
+.list-of-recomendations li{
+  list-style-type: disc !important;
+  margin-left: 20px;
+}
+
+.list-of-recomendations li::marker {
+  color: var(--alter-color); /* Cambia este valor al color que desees */
+}
