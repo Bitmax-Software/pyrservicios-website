@@ -181,11 +181,14 @@ body {
   .carousel-item-mobile img {
     object-position: left; /* Ajusta la posición a la derecha */
   }
+  .carousel-item-mobile .p-right {
+    object-position: right; /* Ajusta la posición a la derecha */
+  }
   .carousel-item2 {
-    height: 30rem !important;
+    height: 25.5rem !important;
   }
   .carousel-item2 img {
-    min-height: 30rem !important;
+    min-height: 25.5rem !important;
   }
   .custom-navbar {
     padding-top: 0px;
@@ -201,7 +204,7 @@ body {
     height: 196rem;
   }
   .logo_header {
-    width: 140% !important;
+    width: 120% !important;
   }
 }
 
