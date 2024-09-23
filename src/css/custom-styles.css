@@ -215,3 +215,13 @@ body {
 .clients .splide__pagination{
   display: none;
 }
+
+.img-responsive {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .img-responsive {
+    width: 90% !important;
+  }
+}
